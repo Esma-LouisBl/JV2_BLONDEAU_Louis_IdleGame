@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Spwaner : MonoBehaviour
+public class Spawner : MonoBehaviour
 
 {
 
