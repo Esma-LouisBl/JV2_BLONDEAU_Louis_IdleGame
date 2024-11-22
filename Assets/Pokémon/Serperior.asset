@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemonName: Majaspic
   sprite: {fileID: 21300000, guid: dd1fb620fbc83144a97313806e574eb3, type: 3}
+  type1: 3
+  type2: 0
   totalHp: 500
   atq: 100000

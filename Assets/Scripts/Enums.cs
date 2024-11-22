@@ -1,5 +1,6 @@
 public enum PokemonType
 {
+    None,
     Feu,
     Eau,
     Plante,

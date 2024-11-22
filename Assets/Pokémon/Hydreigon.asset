@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemonName: Trioxhydre
   sprite: {fileID: 21300000, guid: 56b720471aac3b44a9aaeaad96a2636e, type: 3}
+  type1: 8
+  type2: 11
   totalHp: 120
   atq: 50
