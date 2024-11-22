@@ -1,0 +1,20 @@
+public enum PokemonType
+{
+    Feu,
+    Eau,
+    Plante,
+    Électrik,
+    Poison,
+    Normal,
+    Combat,
+    Dragon,
+    Vol,
+    Spectre,
+    Ténèbres,
+    Psy,
+    Glace,
+    Roche,
+    Sol,
+    Acier,
+    Insecte
+}
