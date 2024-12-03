@@ -81,49 +81,49 @@ public class Spawner : MonoBehaviour
 
             case PokemonType.Eau:
 
-                Camera.main.backgroundColor = Color.blue;
+                _type1Text.color = new Color(36f / 255f, 129f / 255f, 239f / 255f);
 
                 break;
 
             case PokemonType.Feu:
 
-                Camera.main.backgroundColor = Color.red;
+                _type1Text.color = new Color(231f / 255f, 35f / 255f, 36f / 255f);
 
                 break;
 
             case PokemonType.Psy:
 
-                Camera.main.backgroundColor = Color.magenta;
+                _type1Text.color = new Color(239f / 255f, 63f / 255f, 122f / 255f);
 
                 break;
 
             case PokemonType.Ténèbres:
 
-                Camera.main.backgroundColor = Color.black;
+                _type1Text.color = new Color(79f / 255f, 63f / 255f, 61f / 255f);
 
                 break;
 
             case PokemonType.Acier:
 
-                Camera.main.backgroundColor = Color.gray;
+                _type1Text.color = new Color(96f / 255f, 162f / 255f, 185f / 255f);
 
                 break;
 
             case PokemonType.Combat:
 
-                Camera.main.backgroundColor = Color.grey;
+                _type1Text.color = new Color(255f / 255f, 129f / 255f, 0f / 255f);
 
                 break;
 
             case PokemonType.Normal:
 
-                Camera.main.backgroundColor = Color.white;
+                _type1Text.color = new Color(158f / 255f, 161f / 255f, 158f / 255f);
 
                 break;
 
             case PokemonType.Électrik:
 
-                Camera.main.backgroundColor = Color.yellow;
+                _type1Text.color = new Color(250f / 255f, 193f / 255f, 0f / 255f);
 
                 break;
 
@@ -135,7 +135,49 @@ public class Spawner : MonoBehaviour
 
             case PokemonType.Dragon:
 
-                Camera.main.backgroundColor = Color.white;
+                _type1Text.color = new Color(79f / 255f, 96f / 255f, 226f / 255f);
+
+                break;
+
+            case PokemonType.Glace:
+
+                _type1Text.color = new Color(61f / 255f, 217f / 255f, 255f / 255f);
+
+                break;
+
+            case PokemonType.Insecte:
+
+                _type1Text.color = new Color(146f / 162f, 96f / 255f, 18f / 255f);
+
+                break;
+
+            case PokemonType.Poison:
+
+                _type1Text.color = new Color(146f / 255f, 63f / 255f, 204f / 255f);
+
+                break;
+
+            case PokemonType.Roche:
+
+                _type1Text.color = new Color(176f / 255f, 170f / 255f, 130f / 255f);
+
+                break;
+
+            case PokemonType.Sol:
+
+                _type1Text.color = new Color(146f / 255f, 80f / 255f, 27f / 255f);
+
+                break;
+
+            case PokemonType.Spectre:
+
+                _type1Text.color = new Color(112f / 255f, 63f / 255f, 112f / 255f);
+
+                break;
+
+            case PokemonType.Vol:
+
+                _type1Text.color = new Color(130f / 255f, 186f / 255f, 239f / 255f);
 
                 break;
 
@@ -143,6 +185,118 @@ public class Spawner : MonoBehaviour
 
                 break;
 
+        }
+
+        switch (_currentPokemon.type2)
+
+        {
+
+            case PokemonType.Eau:
+
+                _type2Text.color = new Color(36f / 255f, 129f / 255f, 239f / 255f);
+
+                break;
+
+            case PokemonType.Feu:
+
+                _type2Text.color = new Color(231f / 255f, 35f / 255f, 36f / 255f);
+
+                break;
+
+            case PokemonType.Psy:
+
+                _type2Text.color = new Color(239f / 255f, 63f / 255f, 122f / 255f);
+
+                break;
+
+            case PokemonType.Ténèbres:
+
+                _type2Text.color = new Color(79f / 255f, 63f / 255f, 61f / 255f);
+
+                break;
+
+            case PokemonType.Acier:
+
+                _type2Text.color = new Color(96f / 255f, 162f / 255f, 185f / 255f);
+
+                break;
+
+            case PokemonType.Combat:
+
+                _type2Text.color = new Color(255f / 255f, 129f / 255f, 0f / 255f);
+
+                break;
+
+            case PokemonType.Normal:
+
+                _type2Text.color = new Color(158f / 255f, 161f / 255f, 158f / 255f);
+
+                break;
+
+            case PokemonType.Électrik:
+
+                _type2Text.color = new Color(250f / 255f, 193f / 255f, 0f / 255f);
+
+                break;
+
+            case PokemonType.Plante:
+
+                _type2Text.color = new Color(61f / 255f, 162f / 255f, 36f / 255f);
+
+                break;
+
+            case PokemonType.Dragon:
+
+                _type2Text.color = new Color(79f / 255f, 96f / 255f, 226f / 255f);
+
+                break;
+
+            case PokemonType.Glace:
+
+                _type2Text.color = new Color(61f / 255f, 217f / 255f, 255f / 255f);
+
+                break;
+
+            case PokemonType.Insecte:
+
+                _type2Text.color = new Color(146f / 162f, 96f / 255f, 18f / 255f);
+
+                break;
+
+            case PokemonType.Poison:
+
+                _type2Text.color = new Color(146f / 255f, 63f / 255f, 204f / 255f);
+
+                break;
+
+            case PokemonType.Roche:
+
+                _type2Text.color = new Color(176f / 255f, 170f / 255f, 130f / 255f);
+
+                break;
+
+            case PokemonType.Sol:
+
+                _type2Text.color = new Color(146f / 255f, 80f / 255f, 27f / 255f);
+
+                break;
+
+            case PokemonType.Spectre:
+
+                _type2Text.color = new Color(112f / 255f, 63f / 255f, 112f / 255f);
+
+                break;
+
+            case PokemonType.Vol:
+
+                _type2Text.color = new Color(130f / 255f, 186f / 255f, 239f / 255f);
+
+                break;
+
+            default:
+
+                break;
+            
         }
 
     }
