@@ -34,11 +34,11 @@ public class Spawner : MonoBehaviour
 
     }
 
-    public void ReduceHp()
+    public void ReduceHp(int damage)
 
     {
 
-        _currentHp -= 10;
+        _currentHp -= damage;
 
         _hpText.text = _currentHp.ToString("000");
 

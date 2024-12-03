@@ -18,3 +18,4 @@ MonoBehaviour:
   type2: 11
   totalHp: 150
   atq: 25
+  cooldown: 4
