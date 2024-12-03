@@ -68,9 +68,14 @@ public class Spawner : MonoBehaviour
 
         _type2Text.text = _currentPokemon.type2.ToString();
 
+        if (_type2Text.text == "None")
+        {
+            _type2Text.SetText("");
+        }
+
         _pokemonImage.sprite = _currentPokemon.sprite;
         
-        /*switch (_currentPokemon.type)
+        switch (_currentPokemon.type1)
 
         {
 
@@ -92,13 +97,13 @@ public class Spawner : MonoBehaviour
 
                 break;
 
-            case PokemonType.Obscurite:
+            case PokemonType.Ténèbres:
 
                 Camera.main.backgroundColor = Color.black;
 
                 break;
 
-            case PokemonType.Metal:
+            case PokemonType.Acier:
 
                 Camera.main.backgroundColor = Color.gray;
 
@@ -110,13 +115,13 @@ public class Spawner : MonoBehaviour
 
                 break;
 
-            case PokemonType.Incolore:
+            case PokemonType.Normal:
 
                 Camera.main.backgroundColor = Color.white;
 
                 break;
 
-            case PokemonType.Electric:
+            case PokemonType.Électrik:
 
                 Camera.main.backgroundColor = Color.yellow;
 
@@ -124,7 +129,7 @@ public class Spawner : MonoBehaviour
 
             case PokemonType.Plante:
 
-                Camera.main.backgroundColor = Color.green;
+                _type1Text.color = new Color(61f/255f, 162f/255f, 36f/255f);
 
                 break;
 
@@ -138,7 +143,7 @@ public class Spawner : MonoBehaviour
 
                 break;
 
-        }*/
+        }
 
     }
 

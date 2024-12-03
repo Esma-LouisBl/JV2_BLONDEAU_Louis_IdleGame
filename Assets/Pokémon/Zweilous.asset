@@ -16,5 +16,5 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 296c4b57eb79f964faea9e14d2953223, type: 3}
   type1: 8
   type2: 11
-  totalHp: 80
+  totalHp: 150
   atq: 25
