@@ -9,6 +9,8 @@ public class Team : MonoBehaviour
     public PokemonSE[] members = new PokemonSE[3];
 
     [SerializeField]
+    private Sprite _pokemonDefaultSprite;
+    [SerializeField]
     private Image _pokemon0Sprite;
     [SerializeField]
     private Image _pokemon1Sprite;
@@ -22,17 +24,29 @@ public class Team : MonoBehaviour
             _pokemon0Sprite.sprite = members[0].sprite;
             StartCoroutine(AutoClick0());
         }
+        else
+        {
+            _pokemon0Sprite.sprite = _pokemonDefaultSprite;
+        }
 
         if (members[1] != null)
         {
             _pokemon1Sprite.sprite = members[1].sprite;
             StartCoroutine(AutoClick1());
         }
+        else
+        {
+            _pokemon1Sprite.sprite = _pokemonDefaultSprite;
+        }
 
         if (members[2] != null)
         {
             _pokemon2Sprite.sprite = members[2].sprite;
             StartCoroutine(AutoClick2());
+        }
+        else
+        {
+            _pokemon2Sprite.sprite = _pokemonDefaultSprite;
         }
     }
 
