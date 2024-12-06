@@ -9,7 +9,7 @@ public class Team : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(AutoClick1());
     }
 
     // Update is called once per frame
@@ -20,8 +20,12 @@ public class Team : MonoBehaviour
 
     private IEnumerator AutoClick1()
     {
-        spawner.ReduceHp(members[0].atq);
-        yield return new WaitForSeconds(members[0].cooldown);
+        while (true)
+        {
+            Debug.Log(members[0].atq);
+            spawner.ReduceHp(10);
+            yield return new WaitForSeconds(2);
+        }
     }
 
     private IEnumerator AutoClick2()
