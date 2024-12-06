@@ -40,6 +40,10 @@ public class Team : MonoBehaviour
                 _ready0 = false;
                 StartCoroutine(AutoClick0());
             }
+            else
+            {
+                _pokemon0Sprite.sprite = _pokemonDefaultSprite;
+            }
         }
 
         if (_ready1 == true)
@@ -50,6 +54,10 @@ public class Team : MonoBehaviour
                 _ready1 = false;
                 StartCoroutine(AutoClick1());
             }
+            else
+            {
+                _pokemon1Sprite.sprite = _pokemonDefaultSprite;
+            }
         }
 
         if (_ready2 == true)
@@ -59,6 +67,10 @@ public class Team : MonoBehaviour
                 _pokemon2Sprite.sprite = members[2].sprite;
                 _ready2 = false;
                 StartCoroutine(AutoClick2());
+            }
+            else
+            {
+                _pokemon2Sprite.sprite = _pokemonDefaultSprite;
             }
         }
     }
