@@ -9,7 +9,21 @@ public class Team : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(AutoClick1());
+        Debug.Log(members[0]);
+        if (members[0] != null)
+        {
+            StartCoroutine(AutoClick0());
+        }
+
+        if (members[1] != null)
+        {
+            StartCoroutine(AutoClick1());
+        }
+
+        if (members[2] != null)
+        {
+            StartCoroutine(AutoClick2());
+        }
     }
 
     // Update is called once per frame
@@ -18,22 +32,21 @@ public class Team : MonoBehaviour
         
     }
 
-    private IEnumerator AutoClick1()
+    private IEnumerator AutoClick0()
     {
         while (true)
         {
-            Debug.Log(members[0].atq);
             spawner.ReduceHp(10);
             yield return new WaitForSeconds(2);
         }
     }
 
-    private IEnumerator AutoClick2()
+    private IEnumerator AutoClick1()
     {
         yield return new WaitForSeconds(members[2].cooldown);
     }
 
-    private IEnumerator AutoClick3()
+    private IEnumerator AutoClick2()
     {
         yield return new WaitForSeconds(members[3].cooldown);
     }
