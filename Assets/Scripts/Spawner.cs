@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
 
     [SerializeField]
 
-    private Image _pokemonImage;
+    private Image _pokemonImage, _lifeBar;
 
     public PokemonSE currentPokemon;
 
@@ -33,6 +33,11 @@ public class Spawner : MonoBehaviour
 
         Spawn(_encounters[Random.Range(0, _encounters.Length)]);
 
+    }
+
+    private void Update()
+    {
+        _lifeBar.fillAmount = (float)_currentHp / (float)currentPokemon.totalHp;
     }
 
     public void ReduceHp(int damage)
