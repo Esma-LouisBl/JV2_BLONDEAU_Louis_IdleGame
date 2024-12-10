@@ -1195,7 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1279d1962d23d6543b7b8d3001268673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 1798389572}
   _hpText: {fileID: 1376579033}
   _nameText: {fileID: 21342457}
   _type1Text: {fileID: 439444876}
