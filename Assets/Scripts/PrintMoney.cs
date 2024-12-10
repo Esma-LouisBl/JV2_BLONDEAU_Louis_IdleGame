@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class GameManager : MonoBehaviour
+public class PrintMoney : MonoBehaviour
 {
-    public int pokeballs;
-    public int pokedollars;
+    public GameManager manager;
+    [SerializeField]
+    private TextMeshProUGUI money;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        money.text = manager.pokedollars.ToString() + " $";
     }
 }

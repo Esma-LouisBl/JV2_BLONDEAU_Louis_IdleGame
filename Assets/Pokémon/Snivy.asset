@@ -20,3 +20,4 @@ MonoBehaviour:
   atq: 5
   cooldown: 3
   catchRate: 90
+  moneyDrop: 3

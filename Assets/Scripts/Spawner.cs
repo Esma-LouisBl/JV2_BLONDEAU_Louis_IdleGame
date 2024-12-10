@@ -7,6 +7,7 @@ using TMPro;
 public class Spawner : MonoBehaviour
 
 {
+    public GameManager manager;
 
     private int _currentHp;
 
@@ -45,6 +46,7 @@ public class Spawner : MonoBehaviour
         if (_currentHp <= 0)
 
         {
+            manager.pokedollars += currentPokemon.moneyDrop;
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
         }
 
