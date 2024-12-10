@@ -23,6 +23,7 @@ public class Spawner : MonoBehaviour
     private Gradient _lifeGradient;
 
     public PokemonSE currentPokemon;
+    private int maxHp;
 
     [SerializeField]
 
@@ -50,22 +51,24 @@ public class Spawner : MonoBehaviour
 
         _currentHp -= damage;
 
-        _hpText.text = _currentHp.ToString("000") + "/" + currentPokemon.totalHp;
+        _hpText.text = _currentHp.ToString("000") + "/" + maxHp;
 
         if (_currentHp <= 0)
 
         {
             manager.pokedollars += currentPokemon.moneyDrop;
+            manager.level++;
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
         }
 
         if (catched)
         {
+            manager.level++;
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
             catched = false;
         }
 
-        }
+    }
 
     private void Spawn(PokemonSE newPokemon)
 
@@ -73,9 +76,11 @@ public class Spawner : MonoBehaviour
 
         currentPokemon = newPokemon;
 
+        maxHp = Mathf.RoundToInt(currentPokemon.totalHp * (1 + 0.2f * Mathf.Log(manager.level +1 )));
+
         _currentHp = currentPokemon.totalHp;
 
-        _hpText.text = currentPokemon.totalHp.ToString("00");
+        _hpText.text = _currentHp.ToString("000") + "/" + maxHp;
 
         _nameText.text = currentPokemon.pokemonName.ToString();
 

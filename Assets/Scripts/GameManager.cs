@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public int pokeballs;
     public int pokedollars;
+    public int level = 1;
     // Start is called before the first frame update
     void Start()
     {
