@@ -117,4 +117,5 @@ public class Team : MonoBehaviour
         }
         ready2 = true;
     }
+
 }
