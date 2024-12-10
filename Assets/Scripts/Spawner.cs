@@ -19,6 +19,9 @@ public class Spawner : MonoBehaviour
 
     private Image _pokemonImage, _lifeBar;
 
+    [SerializeField]
+    private Gradient _lifeGradient;
+
     public PokemonSE currentPokemon;
 
     [SerializeField]
@@ -38,6 +41,7 @@ public class Spawner : MonoBehaviour
     private void Update()
     {
         _lifeBar.fillAmount = (float)_currentHp / (float)currentPokemon.totalHp;
+        _lifeBar.color = _lifeGradient.Evaluate((float)_currentHp / (float)currentPokemon.totalHp);
     }
 
     public void ReduceHp(int damage)
@@ -46,7 +50,7 @@ public class Spawner : MonoBehaviour
 
         _currentHp -= damage;
 
-        _hpText.text = _currentHp.ToString("000");
+        _hpText.text = _currentHp.ToString("000") + "/" + currentPokemon.totalHp;
 
         if (_currentHp <= 0)
 
