@@ -56,7 +56,7 @@ public class Spawner : MonoBehaviour
         if (_currentHp <= 0)
 
         {
-            manager.pokedollars += currentPokemon.moneyDrop;
+            manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
             manager.level++;
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
         }
@@ -76,7 +76,7 @@ public class Spawner : MonoBehaviour
 
         currentPokemon = newPokemon;
 
-        maxHp = Mathf.RoundToInt(currentPokemon.totalHp * (1 + 0.2f * Mathf.Log(manager.level +1 )));
+        maxHp = Mathf.RoundToInt(currentPokemon.totalHp * (1 + 0.4f * Mathf.Log(manager.level +1 )));
 
         _currentHp = currentPokemon.totalHp;
 
