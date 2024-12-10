@@ -947,6 +947,7 @@ GameObject:
   - component: {fileID: 1027644760}
   - component: {fileID: 1027644761}
   - component: {fileID: 1027644762}
+  - component: {fileID: 1027644763}
   m_Layer: 5
   m_Name: TeamMember1
   m_TagString: Untagged
@@ -1011,6 +1012,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1027644763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027644759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d607b2817e8d29e45ba6eefc71ce262d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  team: {fileID: 1996147489}
+  _infos: {fileID: 1093114735}
+  place: 1
 --- !u!1 &1093114733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,7 +1061,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223.1339, y: -50.7}
+  m_AnchoredPosition: {x: -315, y: -50.7}
   m_SizeDelta: {x: 77.0622, y: 49.884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093114735
@@ -1068,7 +1084,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: test
+  m_text: "Capturez un Pok\xE9mon"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1101,7 +1117,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1292,6 +1308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   team: {fileID: 1996147489}
   _infos: {fileID: 1308000772}
+  place: 0
 --- !u!1 &1308000770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,7 +1343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223.1339, y: 22.059006}
+  m_AnchoredPosition: {x: -315, y: 22.059006}
   m_SizeDelta: {x: 77.0622, y: 49.884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1308000772
@@ -1349,7 +1366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: test
+  m_text: "Capturez un Pok\xE9mon"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1382,7 +1399,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1717,7 +1734,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223.1339, y: -122.8}
+  m_AnchoredPosition: {x: -315, y: -122.8}
   m_SizeDelta: {x: 77.0622, y: 49.884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1582847685
@@ -1740,7 +1757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: test
+  m_text: "Capturez un Pok\xE9mon"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1773,7 +1790,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1949,6 +1966,7 @@ GameObject:
   - component: {fileID: 2018785726}
   - component: {fileID: 2018785725}
   - component: {fileID: 2018785724}
+  - component: {fileID: 2018785727}
   m_Layer: 5
   m_Name: TeamMember2
   m_TagString: Untagged
@@ -2013,6 +2031,21 @@ RectTransform:
   m_AnchoredPosition: {x: 54, y: -136.67137}
   m_SizeDelta: {x: 41.5316, y: 41.5316}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2018785727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018785723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d607b2817e8d29e45ba6eefc71ce262d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  team: {fileID: 1996147489}
+  _infos: {fileID: 1582847685}
+  place: 2
 --- !u!1 &2121320096
 GameObject:
   m_ObjectHideFlags: 0

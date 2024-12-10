@@ -10,6 +10,8 @@ public class PopUpMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     [SerializeField]
     private TextMeshProUGUI _infos;
+
+    public int place;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,18 @@ public class PopUpMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     // Update is called once per frame
     void Update()
     {
-        _infos.text = "Attaque : " + team.members[0].atq.ToString() + "\nCooldown : " + team.members[0].cooldown.ToString();
+        if (team.members[place] != null)
+        {
+            if (team.members[place].type2 != PokemonType.None)
+            {
+                _infos.text = team.members[place].pokemonName + "\n" + team.members[place].type1 + " " + team.members[place].type2 + "\nAttaque : " + team.members[place].atq.ToString() + "\nCooldown : " + team.members[place].cooldown.ToString();
+            }
+            else
+            {
+                _infos.text = team.members[place].pokemonName + "\n" + team.members[place].type1 + "\nAttaque : " + team.members[place].atq.ToString() + "\nCooldown : " + team.members[place].cooldown.ToString();
+            }
+
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
