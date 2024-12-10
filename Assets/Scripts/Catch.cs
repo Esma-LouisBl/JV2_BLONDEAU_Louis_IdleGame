@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Catch : MonoBehaviour
 {
     public Spawner spawner;
     public GameManager manager;
     public Team team;
+    public TextMeshProUGUI ballsNumber;
 
     private int _chance;
     // Start is called before the first frame update
@@ -18,7 +20,7 @@ public class Catch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ballsNumber.text = manager.pokeballs.ToString();
     }
 
     public void ThrowBall()
