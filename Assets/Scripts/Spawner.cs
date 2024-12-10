@@ -18,13 +18,13 @@ public class Spawner : MonoBehaviour
 
     private Image _pokemonImage;
 
-    [SerializeField]
-
-    private PokemonSE _currentPokemon;
+    public PokemonSE currentPokemon;
 
     [SerializeField]
 
     private PokemonSE[] _encounters;
+
+    public bool catched =false;
 
     void Start()
 
@@ -45,37 +45,41 @@ public class Spawner : MonoBehaviour
         if (_currentHp <= 0)
 
         {
-
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
-
         }
 
-    }
+        if (catched)
+        {
+            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            catched = false;
+        }
+
+        }
 
     private void Spawn(PokemonSE newPokemon)
 
     {
 
-        _currentPokemon = newPokemon;
+        currentPokemon = newPokemon;
 
-        _currentHp = _currentPokemon.totalHp;
+        _currentHp = currentPokemon.totalHp;
 
-        _hpText.text = _currentPokemon.totalHp.ToString("00");
+        _hpText.text = currentPokemon.totalHp.ToString("00");
 
-        _nameText.text = _currentPokemon.pokemonName.ToString();
+        _nameText.text = currentPokemon.pokemonName.ToString();
 
-        _type1Text.text = _currentPokemon.type1.ToString();
+        _type1Text.text = currentPokemon.type1.ToString();
 
-        _type2Text.text = _currentPokemon.type2.ToString();
+        _type2Text.text = currentPokemon.type2.ToString();
 
         if (_type2Text.text == "None")
         {
             _type2Text.SetText("");
         }
 
-        _pokemonImage.sprite = _currentPokemon.sprite;
+        _pokemonImage.sprite = currentPokemon.sprite;
         
-        switch (_currentPokemon.type1)
+        switch (currentPokemon.type1)
 
         {
 
@@ -187,7 +191,7 @@ public class Spawner : MonoBehaviour
 
         }
 
-        switch (_currentPokemon.type2)
+        switch (currentPokemon.type2)
 
         {
 

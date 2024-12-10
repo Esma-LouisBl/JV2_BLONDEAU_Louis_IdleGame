@@ -8,9 +8,9 @@ public class Team : MonoBehaviour
     public Spawner spawner;
     public PokemonSE[] members = new PokemonSE[3];
 
-    private bool _ready0;
-    private bool _ready1;
-    private bool _ready2;
+    public bool ready0;
+    public bool ready1;
+    public bool ready2;
 
     [SerializeField]
     private Sprite _pokemonDefaultSprite;
@@ -23,21 +23,34 @@ public class Team : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _ready0 = true;
-        _ready1 = true;
-        _ready2 = true;
+        ready0 = true;
+        ready1 = true;
+        ready2 = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (members[0] != null)
+        {
+            _pokemon0Sprite.sprite = members[0].sprite;
+        }
 
-        if (_ready0 == true)
+        if (members[1] != null)
+        {
+            _pokemon1Sprite.sprite = members[1].sprite;
+        }
+
+        if (members[2] != null)
+        {
+            _pokemon2Sprite.sprite = members[2].sprite;
+        }
+
+        if (ready0 == true)
         {
             if (members[0] != null)
             {
-                _pokemon0Sprite.sprite = members[0].sprite;
-                _ready0 = false;
+                ready0 = false;
                 StartCoroutine(AutoClick0());
             }
             else
@@ -46,12 +59,12 @@ public class Team : MonoBehaviour
             }
         }
 
-        if (_ready1 == true)
+        if (ready1 == true)
         {
             if (members[1] != null)
             {
                 _pokemon1Sprite.sprite = members[1].sprite;
-                _ready1 = false;
+                ready1 = false;
                 StartCoroutine(AutoClick1());
             }
             else
@@ -60,12 +73,12 @@ public class Team : MonoBehaviour
             }
         }
 
-        if (_ready2 == true)
+        if (ready2 == true)
         {
             if (members[2] != null)
             {
                 _pokemon2Sprite.sprite = members[2].sprite;
-                _ready2 = false;
+                ready2 = false;
                 StartCoroutine(AutoClick2());
             }
             else
@@ -82,7 +95,7 @@ public class Team : MonoBehaviour
             spawner.ReduceHp(members[0].atq);
             yield return new WaitForSeconds(members[0].cooldown);
         }
-        _ready0 = true;
+        ready0 = true;
     }
 
     private IEnumerator AutoClick1()
@@ -92,7 +105,7 @@ public class Team : MonoBehaviour
             spawner.ReduceHp(members[1].atq);
             yield return new WaitForSeconds(members[1].cooldown);
         }
-        _ready1 = true;
+        ready1 = true;
     }
 
     private IEnumerator AutoClick2()
@@ -102,6 +115,6 @@ public class Team : MonoBehaviour
             spawner.ReduceHp(members[2].atq);
             yield return new WaitForSeconds(members[2].cooldown);
         }
-        _ready2 = true;
+        ready2 = true;
     }
 }

@@ -19,3 +19,4 @@ MonoBehaviour:
   totalHp: 100
   atq: 10
   cooldown: 5
+  catchRate: 80
