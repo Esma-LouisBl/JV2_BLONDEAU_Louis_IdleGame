@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEditor.PackageManager;
 
-public class IncreaseClickDamage : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class PokeBall : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     public GameManager manager;
@@ -14,17 +14,16 @@ public class IncreaseClickDamage : MonoBehaviour, IPointerEnterHandler, IPointer
     public TextMeshProUGUI priceText;
 
     [SerializeField]
-    private int _price, _power;
+    private int _price;
     [SerializeField]
     private TextMeshProUGUI _infos, _noMoney;
     // Start is called before the first frame update
     void Start()
     {
-        _price = 15;
-        _power = 1;
+        _price = 20;
         _infos.enabled = false;
         _noMoney.enabled = false;
-        _infos.text = "Achetez un Bracelet Macho pour augmenter de " + _power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
+        _infos.text = "Les Poké Balls permettent de capturer des Pokémon.";
     }
 
     // Update is called once per frame
@@ -38,10 +37,8 @@ public class IncreaseClickDamage : MonoBehaviour, IPointerEnterHandler, IPointer
         if (manager.pokedollars >= _price)
         {
             manager.pokedollars -= _price;
-            manager.clickDamage += _power;
-            _power++;
-            _price *= 2;
-            _infos.text = "Achetez un Bracelet Macho pour augmenter de " + _power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
+            manager.pokeballs ++;
+            _infos.text = "Les Poké Balls permettent de capturer des Pokémon.";
         }
         else 
         {
