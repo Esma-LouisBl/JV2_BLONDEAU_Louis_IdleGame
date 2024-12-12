@@ -70,6 +70,31 @@ public class Spawner : MonoBehaviour
 
     }
 
+    public void ReduceHpClick()
+
+    {
+
+        _currentHp -= manager.clickDamage;
+
+        _hpText.text = _currentHp.ToString("000") + "/" + maxHp;
+
+        if (_currentHp <= 0)
+
+        {
+            manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
+            manager.level++;
+            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+        }
+
+        if (catched)
+        {
+            manager.level++;
+            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            catched = false;
+        }
+
+    }
+
     private void Spawn(PokemonSE newPokemon)
 
     {
