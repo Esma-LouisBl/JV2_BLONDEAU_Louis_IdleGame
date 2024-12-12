@@ -1,10 +1,14 @@
 using UnityEngine;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
     public GameObject menuCanvas;
 
     private bool menuActive = false;
+
+    [SerializeField]
+    private TextMeshProUGUI _noMoney1, _noMoney2;
 
     void Update()
     {
@@ -21,5 +25,7 @@ public class MenuManager : MonoBehaviour
     {
         menuActive = false;
         menuCanvas.SetActive(false);
+        _noMoney1.enabled = false;
+        _noMoney2.enabled = false;
     }
 }

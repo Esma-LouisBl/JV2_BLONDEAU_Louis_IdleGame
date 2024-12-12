@@ -4909,6 +4909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuCanvas: {fileID: 2041601554}
+  _noMoney1: {fileID: 122025149}
+  _noMoney2: {fileID: 538179303}
 --- !u!4 &2004864087
 Transform:
   m_ObjectHideFlags: 0
