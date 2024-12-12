@@ -41,7 +41,7 @@ public class Catch : MonoBehaviour
                 team.ready1 = false;
                 team.ready2 = false;
                 _chance = Random.Range(1, 101);
-                Debug.Log(_chance);
+                //MODIFIER LE TAUX EN FONCTION DES PV-----------------------------------------------------
                 if (_chance <= spawner.currentPokemon.catchRate)
                 {
                     if (team.members[0] == null)
