@@ -29,7 +29,7 @@ public class Catch : MonoBehaviour
 
     public void ThrowBall()
     {
-        if (team.members[2] != null)
+        if (team.members[2] != null && team.members[1] != null && team.members[0] != null)
         {
             StartCoroutine(ErrorMessage());
         }
