@@ -6333,6 +6333,7 @@ MonoBehaviour:
   menuCanvas: {fileID: 2041601554}
   _noMoney1: {fileID: 122025149}
   _noMoney2: {fileID: 538179303}
+  _noMoney3: {fileID: 1286730684}
 --- !u!4 &2004864087
 Transform:
   m_ObjectHideFlags: 0

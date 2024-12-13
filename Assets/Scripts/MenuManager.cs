@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
     private bool menuActive = false;
 
     [SerializeField]
-    private TextMeshProUGUI _noMoney1, _noMoney2;
+    private TextMeshProUGUI _noMoney1, _noMoney2, _noMoney3;
 
     void Update()
     {
@@ -27,5 +27,6 @@ public class MenuManager : MonoBehaviour
         menuCanvas.SetActive(false);
         _noMoney1.enabled = false;
         _noMoney2.enabled = false;
+        _noMoney3.enabled = false;
     }
 }
