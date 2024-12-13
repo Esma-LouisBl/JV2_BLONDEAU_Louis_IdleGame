@@ -4869,7 +4869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 1217137360}
   members:
-  - {fileID: 11400000, guid: cf16f9cf91290354cb6a5236fbbdac08, type: 2}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   ready0: 0

@@ -103,7 +103,7 @@ public class Spawner : MonoBehaviour
 
         maxHp = Mathf.RoundToInt(currentPokemon.totalHp * (1 + 0.4f * Mathf.Log(manager.level +1 )));
 
-        _currentHp = currentPokemon.totalHp;
+        _currentHp = maxHp;
 
         _hpText.text = _currentHp.ToString("000") + "/" + maxHp;
 
