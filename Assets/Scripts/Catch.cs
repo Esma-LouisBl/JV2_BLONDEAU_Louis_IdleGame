@@ -38,9 +38,6 @@ public class Catch : MonoBehaviour
             if (manager.pokeballs > 0)
             {
                 manager.pokeballs--;
-                team.ready0 = false;
-                team.ready1 = false;
-                team.ready2 = false;
                 _chance = Random.Range(1, 101);
                 float pourcent = (float)spawner.currentHp / (float)spawner.maxHp;
                 _realCatchRate = spawner.currentPokemon.catchRate*(2-pourcent);
@@ -62,9 +59,6 @@ public class Catch : MonoBehaviour
                         spawner.catched = true;
                     }
                 }
-                team.ready0 = true;
-                team.ready1 = true;
-                team.ready2 = true;
             }
         }
     }
