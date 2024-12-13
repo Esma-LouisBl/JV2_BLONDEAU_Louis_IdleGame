@@ -11,7 +11,7 @@ public class Catch : MonoBehaviour
     public TextMeshProUGUI ballsNumber;
 
     [SerializeField]
-    private TextMeshProUGUI _error;
+    private TextMeshProUGUI _error, _failed;
 
     private int _chance;
     private float _realCatchRate;
@@ -19,6 +19,7 @@ public class Catch : MonoBehaviour
     void Start()
     {
         _error.enabled = false;
+        _failed.enabled = false;
     }
 
     // Update is called once per frame
@@ -59,6 +60,10 @@ public class Catch : MonoBehaviour
                         spawner.catched = true;
                     }
                 }
+                else
+                {
+                    StartCoroutine(Failed());
+                }
             }
         }
     }
@@ -68,5 +73,12 @@ public class Catch : MonoBehaviour
         _error.enabled = true;
         yield return new WaitForSeconds(2);
         _error.enabled = false;
+    }
+
+    private IEnumerator Failed()
+    {
+        _failed.enabled = true;
+        yield return new WaitForSeconds(2);
+        _failed.enabled = false;
     }
 }
