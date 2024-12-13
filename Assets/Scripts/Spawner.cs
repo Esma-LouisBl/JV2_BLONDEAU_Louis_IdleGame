@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
 {
     public GameManager manager;
 
-    private int _currentHp;
+    public int currentHp;
 
     [SerializeField]
 
@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
     private Gradient _lifeGradient;
 
     public PokemonSE currentPokemon;
-    private int maxHp;
+    public int maxHp;
 
     [SerializeField]
 
@@ -41,19 +41,19 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        _lifeBar.fillAmount = (float)_currentHp / (float)currentPokemon.totalHp;
-        _lifeBar.color = _lifeGradient.Evaluate((float)_currentHp / (float)currentPokemon.totalHp);
+        _lifeBar.fillAmount = (float)currentHp / (float)maxHp;
+        _lifeBar.color = _lifeGradient.Evaluate((float)currentHp / (float)maxHp);
     }
 
     public void ReduceHp(int damage)
 
     {
 
-        _currentHp -= damage;
+        currentHp -= damage;
 
-        _hpText.text = _currentHp.ToString("000") + "/" + maxHp;
+        _hpText.text = currentHp.ToString("000") + "/" + maxHp;
 
-        if (_currentHp <= 0)
+        if (currentHp <= 0)
 
         {
             manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
@@ -74,11 +74,11 @@ public class Spawner : MonoBehaviour
 
     {
 
-        _currentHp -= manager.clickDamage;
+        currentHp -= manager.clickDamage;
 
-        _hpText.text = _currentHp.ToString("000") + "/" + maxHp;
+        _hpText.text = currentHp.ToString("000") + "/" + maxHp;
 
-        if (_currentHp <= 0)
+        if (currentHp <= 0)
 
         {
             manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
@@ -103,9 +103,9 @@ public class Spawner : MonoBehaviour
 
         maxHp = Mathf.RoundToInt(currentPokemon.totalHp * (1 + 0.4f * Mathf.Log(manager.level +1 )));
 
-        _currentHp = maxHp;
+        currentHp = maxHp;
 
-        _hpText.text = _currentHp.ToString("000") + "/" + maxHp;
+        _hpText.text = currentHp.ToString("000") + "/" + maxHp;
 
         _nameText.text = currentPokemon.pokemonName.ToString();
 

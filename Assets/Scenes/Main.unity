@@ -2498,6 +2498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1798389572}
+  currentHp: 0
   _hpText: {fileID: 1376579033}
   _nameText: {fileID: 21342457}
   _type1Text: {fileID: 439444876}
@@ -2535,6 +2536,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   currentPokemon: {fileID: 0}
+  maxHp: 0
   _encounters:
   - {fileID: 11400000, guid: ea9f91b9625e5c2439d9754d276dfe55, type: 2}
   - {fileID: 11400000, guid: ab1553c9bf7f6db4495afddeab8a2d42, type: 2}
@@ -4869,7 +4871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 1217137360}
   members:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 5c7cd0f323864804cb8ead07b1d4676e, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   ready0: 0

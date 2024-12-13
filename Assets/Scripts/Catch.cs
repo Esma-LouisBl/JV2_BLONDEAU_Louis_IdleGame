@@ -14,6 +14,7 @@ public class Catch : MonoBehaviour
     private TextMeshProUGUI _error;
 
     private int _chance;
+    private float _realCatchRate;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +42,10 @@ public class Catch : MonoBehaviour
                 team.ready1 = false;
                 team.ready2 = false;
                 _chance = Random.Range(1, 101);
-                //MODIFIER LE TAUX EN FONCTION DES PV-----------------------------------------------------
-                if (_chance <= spawner.currentPokemon.catchRate)
+                float pourcent = (float)spawner.currentHp / (float)spawner.maxHp;
+                _realCatchRate = spawner.currentPokemon.catchRate*(2-pourcent);
+                Debug.Log(_realCatchRate);
+                if (_chance <= _realCatchRate)
                 {
                     if (team.members[0] == null)
                     {
