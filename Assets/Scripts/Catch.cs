@@ -44,7 +44,6 @@ public class Catch : MonoBehaviour
                 _chance = Random.Range(1, 101);
                 float pourcent = (float)spawner.currentHp / (float)spawner.maxHp;
                 _realCatchRate = spawner.currentPokemon.catchRate*(2-pourcent);
-                Debug.Log(_realCatchRate);
                 if (_chance <= _realCatchRate)
                 {
                     if (team.members[0] == null)
