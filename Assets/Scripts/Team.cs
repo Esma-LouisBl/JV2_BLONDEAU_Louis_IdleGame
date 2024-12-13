@@ -12,6 +12,14 @@ public class Team : MonoBehaviour
     public bool ready1;
     public bool ready2;
 
+    public float speed0;
+    public float speed1;
+    public float speed2;
+
+    public int atk0;
+    public int atk1;
+    public int atk2;
+
     [SerializeField]
     private Sprite _pokemonDefaultSprite;
     [SerializeField]
@@ -26,6 +34,10 @@ public class Team : MonoBehaviour
         ready0 = true;
         ready1 = true;
         ready2 = true;
+
+        speed0 = members[0].cooldown;
+
+        atk0 = members[0].atq;
     }
 
     // Update is called once per frame
@@ -92,8 +104,8 @@ public class Team : MonoBehaviour
     {
         while (members[0]!=null)
         {
-            spawner.ReduceHp(members[0].atq);
-            yield return new WaitForSeconds(members[0].cooldown);
+            spawner.ReduceHp(atk0);
+            yield return new WaitForSeconds(speed0);
         }
         ready0 = true;
     }
@@ -102,8 +114,8 @@ public class Team : MonoBehaviour
     {
         while (members[1] != null)
         {
-            spawner.ReduceHp(members[1].atq);
-            yield return new WaitForSeconds(members[1].cooldown);
+            spawner.ReduceHp(atk1);
+            yield return new WaitForSeconds(speed1);
         }
         ready1 = true;
     }
@@ -112,8 +124,8 @@ public class Team : MonoBehaviour
     {
         while (members[2] != null)
         {
-            spawner.ReduceHp(members[2].atq);
-            yield return new WaitForSeconds(members[2].cooldown);
+            spawner.ReduceHp(atk2);
+            yield return new WaitForSeconds(speed2);
         }
         ready2 = true;
     }

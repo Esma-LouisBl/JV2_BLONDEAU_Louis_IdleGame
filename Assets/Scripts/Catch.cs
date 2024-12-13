@@ -47,16 +47,22 @@ public class Catch : MonoBehaviour
                     if (team.members[0] == null)
                     {
                         team.members[0] = spawner.currentPokemon;
+                        team.speed0 = spawner.currentPokemon.cooldown;
+                        team.atk0 = spawner.currentPokemon.atq;
                         spawner.catched = true;
                     }
                     else if (team.members[1] == null)
                     {
                         team.members[1] = spawner.currentPokemon;
+                        team.speed1 = spawner.currentPokemon.cooldown;
+                        team.atk1 = spawner.currentPokemon.atq;
                         spawner.catched = true;
                     }
                     else if (team.members[2] == null)
                     {
                         team.members[2] = spawner.currentPokemon;
+                        team.speed2 = spawner.currentPokemon.cooldown;
+                        team.atk2 = spawner.currentPokemon.atq;
                         spawner.catched = true;
                     }
                 }
