@@ -21,3 +21,4 @@ MonoBehaviour:
   cooldown: 0.5
   catchRate: 20
   moneyDrop: 15
+  rarity: 3

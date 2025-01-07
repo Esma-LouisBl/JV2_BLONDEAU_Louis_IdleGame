@@ -142,7 +142,7 @@ public class Spawner : MonoBehaviour
 
                 break;
 
-            case PokemonType.Ténèbres:
+            case PokemonType.Tenebres:
 
                 _type1Text.color = new Color(79f / 255f, 63f / 255f, 61f / 255f);
 
@@ -166,7 +166,7 @@ public class Spawner : MonoBehaviour
 
                 break;
 
-            case PokemonType.Électrik:
+            case PokemonType.Electrik:
 
                 _type1Text.color = new Color(250f / 255f, 193f / 255f, 0f / 255f);
 
@@ -254,7 +254,7 @@ public class Spawner : MonoBehaviour
 
                 break;
 
-            case PokemonType.Ténèbres:
+            case PokemonType.Tenebres:
 
                 _type2Text.color = new Color(79f / 255f, 63f / 255f, 61f / 255f);
 
@@ -278,7 +278,7 @@ public class Spawner : MonoBehaviour
 
                 break;
 
-            case PokemonType.Électrik:
+            case PokemonType.Electrik:
 
                 _type2Text.color = new Color(250f / 255f, 193f / 255f, 0f / 255f);
 

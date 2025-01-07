@@ -15,4 +15,5 @@ public class PokemonSE : ScriptableObject
     public float cooldown;
     public int catchRate;
     public int moneyDrop;
+    public int rarity;
 }

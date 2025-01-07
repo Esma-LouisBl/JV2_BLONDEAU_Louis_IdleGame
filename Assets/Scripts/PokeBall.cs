@@ -23,7 +23,7 @@ public class PokeBall : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         _price = 20;
         _infos.enabled = false;
         _noMoney.enabled = false;
-        _infos.text = "Les Poké Balls permettent de capturer des Pokémon.";
+        _infos.text = "Les Poke Balls permettent de capturer des Pokemon.";
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class PokeBall : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             manager.pokedollars -= _price;
             manager.pokeballs ++;
-            _infos.text = "Les Poké Balls permettent de capturer des Pokémon.";
+            _infos.text = "Les Poke Balls permettent de capturer des Pokemon.";
         }
         else 
         {
