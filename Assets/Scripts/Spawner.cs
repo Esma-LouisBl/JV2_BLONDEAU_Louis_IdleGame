@@ -28,14 +28,33 @@ public class Spawner : MonoBehaviour
     [SerializeField]
 
     private PokemonSE[] _encounters;
+    private int _wildRarity;
 
     public bool catched =false;
 
     void Start()
 
     {
+        _wildRarity = Random.Range(1,101);
+        if (_wildRarity < 11) 
+        {
+            _wildRarity = 3;
+        }
+        else if (_wildRarity > 10 && _wildRarity < 51)
+        {
+            _wildRarity = 2;
+        }
+        else if (_wildRarity > 50)
+        {
+            _wildRarity = 1;
+        }
 
         Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+
+        while (currentPokemon.rarity != _wildRarity)
+        {
+            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+        }
 
     }
 
@@ -43,6 +62,8 @@ public class Spawner : MonoBehaviour
     {
         _lifeBar.fillAmount = (float)currentHp / (float)maxHp;
         _lifeBar.color = _lifeGradient.Evaluate((float)currentHp / (float)maxHp);
+
+        Debug.Log(_wildRarity);
     }
 
     public void ReduceHp(int damage)
@@ -58,13 +79,51 @@ public class Spawner : MonoBehaviour
         {
             manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
             manager.level++;
+            _wildRarity = Random.Range(1, 101);
+            if (_wildRarity < 11)
+            {
+                _wildRarity = 3;
+            }
+            else if (_wildRarity > 10 && _wildRarity < 51)
+            {
+                _wildRarity = 2;
+            }
+            else if (_wildRarity > 50)
+            {
+                _wildRarity = 1;
+            }
+
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+
+            while (currentPokemon.rarity != _wildRarity)
+            {
+                Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            }
         }
 
         if (catched)
         {
             manager.level++;
+            _wildRarity = Random.Range(1, 101);
+            if (_wildRarity < 11)
+            {
+                _wildRarity = 3;
+            }
+            else if (_wildRarity > 10 && _wildRarity < 51)
+            {
+                _wildRarity = 2;
+            }
+            else if (_wildRarity > 50)
+            {
+                _wildRarity = 1;
+            }
+
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+
+            while (currentPokemon.rarity != _wildRarity)
+            {
+                Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            }
             catched = false;
         }
 
@@ -83,13 +142,51 @@ public class Spawner : MonoBehaviour
         {
             manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
             manager.level++;
+            _wildRarity = Random.Range(1, 101);
+            if (_wildRarity < 11)
+            {
+                _wildRarity = 3;
+            }
+            else if (_wildRarity > 10 && _wildRarity < 51)
+            {
+                _wildRarity = 2;
+            }
+            else if (_wildRarity > 50)
+            {
+                _wildRarity = 1;
+            }
+
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+
+            while (currentPokemon.rarity != _wildRarity)
+            {
+                Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            }
         }
 
         if (catched)
         {
             manager.level++;
+            _wildRarity = Random.Range(1, 101);
+            if (_wildRarity < 11)
+            {
+                _wildRarity = 3;
+            }
+            else if (_wildRarity > 10 && _wildRarity < 51)
+            {
+                _wildRarity = 2;
+            }
+            else if (_wildRarity > 50)
+            {
+                _wildRarity = 1;
+            }
+
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+
+            while (currentPokemon.rarity != _wildRarity)
+            {
+                Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            }
             catched = false;
         }
 
