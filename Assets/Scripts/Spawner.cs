@@ -62,8 +62,6 @@ public class Spawner : MonoBehaviour
     {
         _lifeBar.fillAmount = (float)currentHp / (float)maxHp;
         _lifeBar.color = _lifeGradient.Evaluate((float)currentHp / (float)maxHp);
-
-        Debug.Log(_wildRarity);
     }
 
     public void ReduceHp(int damage)

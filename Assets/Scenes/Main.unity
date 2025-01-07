@@ -5946,7 +5946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1fc758a20118f49bc51faa91597c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pokeballs: 10
+  pokeballs: 5
   pokedollars: 0
   level: 1
   clickDamage: 1
@@ -6968,7 +6968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2041601555
 MonoBehaviour:
   m_ObjectHideFlags: 0
