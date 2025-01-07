@@ -6857,17 +6857,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Attaquez les Pok\xE9mon sauvages qui apparaissent en cliquant sur le bouton
-    d'attaque au centre de l'\xE9cran !\n\nVous pouvez \xE9galement le capturer \xE0
-    l'aide des Pok\xE9 Balls achetables dans la boutique, mais attention : un Pok\xE9mon
-    ayant beaucoup de PV sera plus difficile \xE0 capturer.\n\nVotre \xE9quipe est
-    constitu\xE9e au maximum de 3 Pok\xE9mon, qui vous aident \xE0 attaquer le Pok\xE9mon
-    sauvage. Chaque Pok\xE9mon a une stat d'Attaque et de Vitesse diff\xE9rente.\n\nSi
-    vous d\xE9sirez capturer un nouveau partenaire alors que vous en avez d\xE9j\xE0
-    3, vous devrez en rel\xE2cher un en appuyant sur l'ic\xF4ne \xE0 sa gauche."
+  m_text: 'Attaquez les Pokemon sauvages qui apparaissent en cliquant sur le bouton
+    d''attaque au centre de l''ecran !
+
+
+    Vous pouvez egalement le capturer a
+    l''aide des Poke Balls achetables dans la boutique, mais attention : un Pokemon
+    ayant beaucoup de PV sera plus difficile a capturer.
+
+
+    Votre equipe est constituee
+    au maximum de 3 Pokemon, qui vous aident a attaquer le Pokemon sauvage. Chaque
+    Pokemon a une stat d''Attaque et de Vitesse differente.
+
+
+    Si vous desirez
+    capturer un nouveau partenaire alors que vous en avez deja 3, vous devrez en
+    relacher un en appuyant sur l''icone a sa gauche.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fc8e8d7281524fa4185e2e9d72a93eae, type: 2}
+  m_sharedMaterial: {fileID: 3299978235556199348, guid: fc8e8d7281524fa4185e2e9d72a93eae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6891,8 +6900,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
