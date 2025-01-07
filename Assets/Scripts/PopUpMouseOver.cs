@@ -21,15 +21,15 @@ public class PopUpMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     // Update is called once per frame
     void Update()
     {
-        if (team.members[place] != null)
+        if (place == 0)
         {
-            if (team.members[place].type2 != PokemonType.None)
+            if (team.members[0].type2 != PokemonType.None)
             {
-                _infos.text = team.members[place].pokemonName + "\n" + team.members[place].type1 + " " + team.members[place].type2 + "\nAttaque : " + team.atks[place].ToString() + "\nCooldown : " + team.speeds[place].ToString();
+                _infos.text = team.members[0].pokemonName + "\n" + team.members[0].type1 + " " + team.members[0].type2 + "\nAttaque : " + team.atk0.ToString() + "\nCooldown : " + team.speed0.ToString();
             }
             else
             {
-                _infos.text = team.members[place].pokemonName + "\n" + team.members[place].type1 + "\nAttaque : " + team.atks[place].ToString() + "\nCooldown : " + team.speeds[place].ToString();
+                _infos.text = team.members[0].pokemonName + "\n" + team.members[0].type1 + "\nAttaque : " + team.atk0.ToString() + "\nCooldown : " + team.speed0.ToString();
             }
 
         }
