@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
-  m_Name: Servine
+  m_Name: Tepig
   m_EditorClassIdentifier: 
-  pokemonName: Lianaja
-  sprite: {fileID: 21300000, guid: 3e43bc9cc8fd3b943a696ebe2bbc69a4, type: 3}
-  cry: {fileID: 8300000, guid: 69b3b282dbe05b642aa36587c5f09146, type: 3}
-  type1: 3
+  pokemonName: Gruikui
+  sprite: {fileID: 21300000, guid: e633d502f33d42f48871764092086585, type: 3}
+  cry: {fileID: 8300000, guid: f5089004d46f60848a066dc1fbfd23c9, type: 3}
+  type1: 1
   type2: 0
-  totalHp: 120
-  atq: 8
-  cooldown: 2
-  catchRate: 60
-  moneyDrop: 7
-  rarity: 2
+  totalHp: 80
+  atq: 4
+  cooldown: 6
+  catchRate: 90
+  moneyDrop: 3
+  rarity: 1

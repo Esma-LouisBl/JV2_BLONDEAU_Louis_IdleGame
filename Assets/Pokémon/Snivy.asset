@@ -17,8 +17,8 @@ MonoBehaviour:
   cry: {fileID: 8300000, guid: 8fe8db7e38489db43a7823adb975634e, type: 3}
   type1: 3
   type2: 0
-  totalHp: 100
-  atq: 5
+  totalHp: 90
+  atq: 2
   cooldown: 3
   catchRate: 90
   moneyDrop: 3
