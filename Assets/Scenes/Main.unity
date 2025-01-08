@@ -2788,8 +2788,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -362.7656, y: -113.68996}
-  m_SizeDelta: {x: 861.5773, y: 481.7436}
+  m_AnchoredPosition: {x: -362.7656, y: -107.68117}
+  m_SizeDelta: {x: 861.5773, y: 493.7612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047663554
 MonoBehaviour:
@@ -6728,7 +6728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 1217137360}
   members:
-  - {fileID: 11400000, guid: 5c7cd0f323864804cb8ead07b1d4676e, type: 2}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   ready0: 0
@@ -6737,11 +6737,9 @@ MonoBehaviour:
   speed0: 0
   speed1: 0
   speed2: 0
-  speeds: []
   atk0: 0
   atk1: 0
   atk2: 0
-  atks: []
   _pokemonDefaultSprite: {fileID: 21300000, guid: b3b2a1c5f6d7a2c4cad9f42cd104df4a, type: 3}
   _pokemon0Sprite: {fileID: 1290680386}
   _pokemon1Sprite: {fileID: 1027644762}
@@ -7087,12 +7085,13 @@ MonoBehaviour:
 
     Votre equipe est constituee
     au maximum de 3 Pokemon, qui vous aident a attaquer le Pokemon sauvage. Chaque
-    Pokemon a une stat d''Attaque et de Vitesse differente.
+    Pokemon a une stat d''Attaque et de Vitesse differente. Vous pouvez les retrouver
+    en passant le curseur sur votre Pokemon.
 
 
-    Si vous desirez
-    capturer un nouveau partenaire alors que vous en avez deja 3, vous devrez en
-    relacher un en appuyant sur l''icone a sa gauche.'
+    Si vous desirez capturer un nouveau
+    partenaire alors que vous en avez deja 3, vous devrez en relacher un en appuyant
+    sur l''icone a sa gauche.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc8e8d7281524fa4185e2e9d72a93eae, type: 2}
   m_sharedMaterial: {fileID: 3299978235556199348, guid: fc8e8d7281524fa4185e2e9d72a93eae, type: 2}

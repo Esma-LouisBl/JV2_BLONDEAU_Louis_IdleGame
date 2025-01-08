@@ -35,9 +35,9 @@ public class Team : MonoBehaviour
         ready1 = true;
         ready2 = true;
 
-        speed0 = members[0].cooldown;
+        //speed0 = members[0].cooldown;
 
-        atk0 = members[0].atq;
+        //atk0 = members[0].atq;
     }
 
     // Update is called once per frame
