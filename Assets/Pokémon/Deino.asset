@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemonName: Solochi
   sprite: {fileID: 21300000, guid: 156a98dab9a70a64db49f829d13fae88, type: 3}
+  cry: {fileID: 8300000, guid: f6f6c440072c8f4468b517507c7388d3, type: 3}
   type1: 8
   type2: 11
   totalHp: 100

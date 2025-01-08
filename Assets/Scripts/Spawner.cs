@@ -19,6 +19,8 @@ public class Spawner : MonoBehaviour
 
     private Image _pokemonImage, _lifeBar;
 
+    private AudioSource _audioSource;
+
     [SerializeField]
     private Gradient _lifeGradient;
 
@@ -35,6 +37,8 @@ public class Spawner : MonoBehaviour
     void Start()
 
     {
+        _audioSource = GetComponent<AudioSource>();
+
         _wildRarity = Random.Range(1,101);
         if (_wildRarity < 11) 
         {
@@ -55,6 +59,8 @@ public class Spawner : MonoBehaviour
         {
             Spawn(_encounters[Random.Range(0, _encounters.Length)]);
         }
+        _audioSource.clip = currentPokemon.cry;
+        _audioSource.Play();
 
     }
 
@@ -97,6 +103,8 @@ public class Spawner : MonoBehaviour
             {
                 Spawn(_encounters[Random.Range(0, _encounters.Length)]);
             }
+            _audioSource.clip = currentPokemon.cry;
+            _audioSource.Play();
         }
 
         if (catched)
@@ -122,6 +130,8 @@ public class Spawner : MonoBehaviour
             {
                 Spawn(_encounters[Random.Range(0, _encounters.Length)]);
             }
+            _audioSource.clip = currentPokemon.cry;
+            _audioSource.Play();
             catched = false;
         }
 
@@ -160,6 +170,8 @@ public class Spawner : MonoBehaviour
             {
                 Spawn(_encounters[Random.Range(0, _encounters.Length)]);
             }
+            _audioSource.clip = currentPokemon.cry;
+            _audioSource.Play();
         }
 
         if (catched)
@@ -185,6 +197,8 @@ public class Spawner : MonoBehaviour
             {
                 Spawn(_encounters[Random.Range(0, _encounters.Length)]);
             }
+            _audioSource.clip = currentPokemon.cry;
+            _audioSource.Play();
             catched = false;
         }
 

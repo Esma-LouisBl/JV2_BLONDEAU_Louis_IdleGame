@@ -8,6 +8,7 @@ public class PokemonSE : ScriptableObject
 {
     public string pokemonName;
     public Sprite sprite;
+    public AudioClip cry;
     public PokemonType type1;
     public PokemonType type2;
     public int totalHp;
