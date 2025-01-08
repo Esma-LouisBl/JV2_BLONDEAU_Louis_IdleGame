@@ -1369,6 +1369,7 @@ GameObject:
   - component: {fileID: 372469301}
   - component: {fileID: 372469300}
   - component: {fileID: 372469299}
+  - component: {fileID: 372469302}
   m_Layer: 5
   m_Name: Sprite
   m_TagString: Untagged
@@ -1433,6 +1434,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -16.6}
   m_SizeDelta: {x: 144.2776, y: 144.28}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &372469302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372469298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f646cf9b79f652498febfa64658cfb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _infos: {fileID: 804305706}
+  spawner: {fileID: 1217137360}
 --- !u!1 &382156113
 GameObject:
   m_ObjectHideFlags: 0
@@ -4489,7 +4504,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4a76f21b087f5d04facbc1460374d6d8, type: 2}
   - {fileID: 11400000, guid: f350309614b30494f90bbb5fa10e2acb, type: 2}
   - {fileID: 11400000, guid: ba4339588308b0e4cbb9e936158fec02, type: 2}
-  _infos: {fileID: 804305706}
   catched: 0
 --- !u!4 &1217137361
 Transform:
