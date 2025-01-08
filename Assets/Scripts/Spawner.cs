@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour
 
     [SerializeField]
 
-    private PokemonSE[] _encounters;
+    public PokemonSE[] encounters;
     private int _wildRarity;
 
     public bool catched =false;
@@ -58,11 +58,11 @@ public class Spawner : MonoBehaviour
             _wildRarity = 1;
         }
 
-        Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+        Spawn(encounters[Random.Range(0, encounters.Length)]);
 
         while (currentPokemon.rarity != _wildRarity)
         {
-            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            Spawn(encounters[Random.Range(0, encounters.Length)]);
         }
         _audioSource.clip = currentPokemon.cry;
         _audioSource.Play();
@@ -106,11 +106,11 @@ public class Spawner : MonoBehaviour
                 _wildRarity = 1;
             }
 
-            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            Spawn(encounters[Random.Range(0, encounters.Length)]);
 
             while (currentPokemon.rarity != _wildRarity)
             {
-                Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+                Spawn(encounters[Random.Range(0, encounters.Length)]);
             }
             _audioSource.clip = currentPokemon.cry;
             _audioSource.Play();
@@ -137,11 +137,11 @@ public class Spawner : MonoBehaviour
                 _wildRarity = 1;
             }
 
-            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            Spawn(encounters[Random.Range(0, encounters.Length)]);
 
             while (currentPokemon.rarity != _wildRarity)
             {
-                Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+                Spawn(encounters[Random.Range(0, encounters.Length)]);
             }
             _audioSource.clip = currentPokemon.cry;
             _audioSource.Play();
@@ -181,11 +181,11 @@ public class Spawner : MonoBehaviour
                 _wildRarity = 1;
             }
 
-            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            Spawn(encounters[Random.Range(0, encounters.Length)]);
 
             while (currentPokemon.rarity != _wildRarity)
             {
-                Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+                Spawn(encounters[Random.Range(0, encounters.Length)]);
             }
             _audioSource.clip = currentPokemon.cry;
             _audioSource.Play();
@@ -212,11 +212,11 @@ public class Spawner : MonoBehaviour
                 _wildRarity = 1;
             }
 
-            Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+            Spawn(encounters[Random.Range(0, encounters.Length)]);
 
             while (currentPokemon.rarity != _wildRarity)
             {
-                Spawn(_encounters[Random.Range(0, _encounters.Length)]);
+                Spawn(encounters[Random.Range(0, encounters.Length)]);
             }
             _audioSource.clip = currentPokemon.cry;
             _audioSource.Play();
