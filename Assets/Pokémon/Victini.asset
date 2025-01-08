@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
+  m_Name: Victini
+  m_EditorClassIdentifier: 
+  pokemonName: Victini
+  sprite: {fileID: 21300000, guid: 807059ba0ca6ea74c85f6ff02a47396f, type: 3}
+  cry: {fileID: 8300000, guid: d4c47f6797548f841924026a64d49d47, type: 3}
+  type1: 1
+  type2: 12
+  totalHp: 500
+  atq: 7
+  cooldown: 0.5
+  catchRate: 10
+  moneyDrop: 100
+  rarity: 4

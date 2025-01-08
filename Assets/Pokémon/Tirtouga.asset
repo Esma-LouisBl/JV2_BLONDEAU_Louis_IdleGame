@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
+  m_Name: Tirtouga
+  m_EditorClassIdentifier: 
+  pokemonName: Carapagos
+  sprite: {fileID: 21300000, guid: 9a514f63245070a4b9a536fcdb52c86f, type: 3}
+  cry: {fileID: 8300000, guid: c5000d33003c6eb40ad043f7fe632f1e, type: 3}
+  type1: 14
+  type2: 2
+  totalHp: 110
+  atq: 2
+  cooldown: 10
+  catchRate: 50
+  moneyDrop: 10
+  rarity: 2
