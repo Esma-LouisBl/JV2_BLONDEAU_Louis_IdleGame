@@ -2740,6 +2740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1798389572}
+  team: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &801670611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4489,21 +4491,21 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   currentPokemon: {fileID: 0}
   maxHp: 0
-  _encounters:
-  - {fileID: 11400000, guid: ea9f91b9625e5c2439d9754d276dfe55, type: 2}
-  - {fileID: 11400000, guid: ab1553c9bf7f6db4495afddeab8a2d42, type: 2}
-  - {fileID: 11400000, guid: cf16f9cf91290354cb6a5236fbbdac08, type: 2}
+  encounters:
   - {fileID: 11400000, guid: 296d8cb58b818034cb1a2a5874f31c16, type: 2}
-  - {fileID: 11400000, guid: 7e8dba3317a46d145a2adf77a7af17e4, type: 2}
-  - {fileID: 11400000, guid: 5c7cd0f323864804cb8ead07b1d4676e, type: 2}
-  - {fileID: 11400000, guid: a67c6af492fb3d848b4d45123380f9ca, type: 2}
-  - {fileID: 11400000, guid: 12c169e5efb1e3b43a6fbfc721fd6a61, type: 2}
-  - {fileID: 11400000, guid: 041eab3a5cfd050418cd2fce3b6284ac, type: 2}
-  - {fileID: 11400000, guid: 8a53b52454ac3374bb33ae802f931a11, type: 2}
   - {fileID: 11400000, guid: 32facc3c5917a4649acf87b0441e60c9, type: 2}
-  - {fileID: 11400000, guid: 4a76f21b087f5d04facbc1460374d6d8, type: 2}
+  - {fileID: 11400000, guid: 041eab3a5cfd050418cd2fce3b6284ac, type: 2}
+  - {fileID: 11400000, guid: 5c7cd0f323864804cb8ead07b1d4676e, type: 2}
+  - {fileID: 11400000, guid: 8a53b52454ac3374bb33ae802f931a11, type: 2}
+  - {fileID: 11400000, guid: 12c169e5efb1e3b43a6fbfc721fd6a61, type: 2}
   - {fileID: 11400000, guid: f350309614b30494f90bbb5fa10e2acb, type: 2}
+  - {fileID: 11400000, guid: 4a76f21b087f5d04facbc1460374d6d8, type: 2}
+  - {fileID: 11400000, guid: cf16f9cf91290354cb6a5236fbbdac08, type: 2}
+  - {fileID: 11400000, guid: ab1553c9bf7f6db4495afddeab8a2d42, type: 2}
+  - {fileID: 11400000, guid: ea9f91b9625e5c2439d9754d276dfe55, type: 2}
+  - {fileID: 11400000, guid: a67c6af492fb3d848b4d45123380f9ca, type: 2}
   - {fileID: 11400000, guid: ba4339588308b0e4cbb9e936158fec02, type: 2}
+  - {fileID: 11400000, guid: 7e8dba3317a46d145a2adf77a7af17e4, type: 2}
   catched: 0
 --- !u!4 &1217137361
 Transform:
