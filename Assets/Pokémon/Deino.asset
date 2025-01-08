@@ -19,7 +19,7 @@ MonoBehaviour:
   type2: 11
   totalHp: 100
   atq: 10
-  cooldown: 5
-  catchRate: 80
+  cooldown: 7
+  catchRate: 50
   moneyDrop: 10
   rarity: 1
