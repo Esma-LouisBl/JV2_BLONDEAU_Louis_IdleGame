@@ -40,7 +40,11 @@ public class Spawner : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
 
         _wildRarity = Random.Range(1,101);
-        if (_wildRarity < 11) 
+        if (_wildRarity == 1)
+        {
+            _wildRarity = 4;
+        }
+        else if (_wildRarity < 11) 
         {
             _wildRarity = 3;
         }
@@ -84,7 +88,11 @@ public class Spawner : MonoBehaviour
             manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
             manager.level++;
             _wildRarity = Random.Range(1, 101);
-            if (_wildRarity < 11)
+            if (_wildRarity == 1)
+            {
+                _wildRarity = 4;
+            }
+            else if (_wildRarity < 11)
             {
                 _wildRarity = 3;
             }
@@ -111,7 +119,11 @@ public class Spawner : MonoBehaviour
         {
             manager.level++;
             _wildRarity = Random.Range(1, 101);
-            if (_wildRarity < 11)
+            if (_wildRarity == 1)
+            {
+                _wildRarity = 4;
+            }
+            else if (_wildRarity < 11)
             {
                 _wildRarity = 3;
             }
@@ -151,7 +163,11 @@ public class Spawner : MonoBehaviour
             manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
             manager.level++;
             _wildRarity = Random.Range(1, 101);
-            if (_wildRarity < 11)
+            if (_wildRarity == 1)
+            {
+                _wildRarity = 4;
+            }
+            else if (_wildRarity < 11)
             {
                 _wildRarity = 3;
             }
@@ -178,7 +194,11 @@ public class Spawner : MonoBehaviour
         {
             manager.level++;
             _wildRarity = Random.Range(1, 101);
-            if (_wildRarity < 11)
+            if (_wildRarity == 1)
+            {
+                _wildRarity = 4;
+            }
+            else if (_wildRarity < 11)
             {
                 _wildRarity = 3;
             }
