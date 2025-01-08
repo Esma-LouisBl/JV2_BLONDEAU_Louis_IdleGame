@@ -3329,6 +3329,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 296d8cb58b818034cb1a2a5874f31c16, type: 2}
   - {fileID: 11400000, guid: 7e8dba3317a46d145a2adf77a7af17e4, type: 2}
   - {fileID: 11400000, guid: 5c7cd0f323864804cb8ead07b1d4676e, type: 2}
+  - {fileID: 11400000, guid: a67c6af492fb3d848b4d45123380f9ca, type: 2}
+  - {fileID: 11400000, guid: 12c169e5efb1e3b43a6fbfc721fd6a61, type: 2}
+  - {fileID: 11400000, guid: 041eab3a5cfd050418cd2fce3b6284ac, type: 2}
+  - {fileID: 11400000, guid: 8a53b52454ac3374bb33ae802f931a11, type: 2}
+  - {fileID: 11400000, guid: 32facc3c5917a4649acf87b0441e60c9, type: 2}
+  - {fileID: 11400000, guid: 4a76f21b087f5d04facbc1460374d6d8, type: 2}
+  - {fileID: 11400000, guid: f350309614b30494f90bbb5fa10e2acb, type: 2}
+  - {fileID: 11400000, guid: ba4339588308b0e4cbb9e936158fec02, type: 2}
   catched: 0
 --- !u!4 &1217137361
 Transform:
@@ -7075,23 +7083,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Attaquez les Pokemon sauvages qui apparaissent en cliquant sur le bouton
-    d''attaque au centre de l''ecran !
+    d''attaque au centre de l''ecran ! Chaque Pokemon mis au tapis vous rapporte
+    de l''argent.
 
 
-    Vous pouvez egalement le capturer a
-    l''aide des Poke Balls achetables dans la boutique, mais attention : un Pokemon
-    ayant beaucoup de PV sera plus difficile a capturer.
+    Vous pouvez egalement le capturer a l''aide des Poke Balls
+    achetables dans la boutique, mais attention : un Pokemon ayant beaucoup de PV
+    sera plus difficile a capturer.
 
 
-    Votre equipe est constituee
-    au maximum de 3 Pokemon, qui vous aident a attaquer le Pokemon sauvage. Chaque
-    Pokemon a une stat d''Attaque et de Vitesse differente. Vous pouvez les retrouver
-    en passant le curseur sur votre Pokemon.
+    Votre equipe est constituee au maximum
+    de 3 Pokemon, qui vous aident a attaquer le Pokemon sauvage. Chaque Pokemon a
+    une stat d''Attaque et de Vitesse differente. Vous pouvez les retrouver en passant
+    le curseur sur votre Pokemon.
 
 
-    Si vous desirez capturer un nouveau
-    partenaire alors que vous en avez deja 3, vous devrez en relacher un en appuyant
-    sur l''icone a sa gauche.'
+    Si vous desirez capturer un nouveau partenaire
+    alors que vous en avez deja 3, vous devrez en relacher un en appuyant sur l''icone
+    a sa gauche.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc8e8d7281524fa4185e2e9d72a93eae, type: 2}
   m_sharedMaterial: {fileID: 3299978235556199348, guid: fc8e8d7281524fa4185e2e9d72a93eae, type: 2}
@@ -7118,8 +7127,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
-  m_fontSizeBase: 17
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
