@@ -25,7 +25,7 @@ public class ChoiceScarf : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     void Start()
     {
         _price = 250;
-        _power = 0.2f;
+        _power = 0.1f;
         _infos.enabled = false;
         _noMoney.enabled = false;
         _infos.text = "Achetez un Mouchoir Choix pour diminuer de " + _power + " le cooldown de tous vos Pokémon.";
@@ -42,9 +42,11 @@ public class ChoiceScarf : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         if (manager.pokedollars >= _price)
         {
             manager.pokedollars -= _price;
+            _power = Mathf.Round(_power * 10.0f) * 0.1f;
             if (team.speed0 - _power > 0)
             { 
-                team.speed0 -= _power; 
+                team.speed0 -= _power;
+                team.speed0 = Mathf.Round(team.speed0 * 10.0f) * 0.1f;
             }
             else
             {
@@ -53,6 +55,7 @@ public class ChoiceScarf : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             if (team.speed1 - _power > 0)
             {
                 team.speed1 -= _power;
+                team.speed1 = Mathf.Round(team.speed1 * 10.0f) * 0.1f;
             }
             else
             {
@@ -61,6 +64,7 @@ public class ChoiceScarf : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             if (team.speed2 - _power > 0)
             {
                 team.speed2 -= _power;
+                team.speed2 = Mathf.Round(team.speed2 * 10.0f) * 0.1f;
             }
             else
             {
@@ -68,6 +72,9 @@ public class ChoiceScarf : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             }
             _price *= 2;
             _infos.text = "Achetez un Mouchoir Choix pour diminuer de " + _power + " le cooldown de tous vos Pokémon.";
+
+            _power += 0.1f;
+            _power = Mathf.Round(_power * 10.0f) * 0.1f;
         }
         else 
         {
