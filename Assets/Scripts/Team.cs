@@ -15,12 +15,10 @@ public class Team : MonoBehaviour
     public float speed0;
     public float speed1;
     public float speed2;
-    public List<float> speeds = new List<float>();
 
     public int atk0;
     public int atk1;
     public int atk2;
-    public List<float> atks = new List<float>();
 
     [SerializeField]
     private Sprite _pokemonDefaultSprite;
@@ -36,14 +34,6 @@ public class Team : MonoBehaviour
         ready0 = true;
         ready1 = true;
         ready2 = true;
-
-        speeds.Add(speed0);
-        speeds.Add(speed1);
-        speeds.Add(speed2);
-
-        atks.Add(atk0);
-        atks.Add(atk1);
-        atks.Add(atk2);
 
         speed0 = members[0].cooldown;
 
