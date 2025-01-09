@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Tirtouga
   m_EditorClassIdentifier: 
+  id: 24
   pokemonName: Carapagos
   sprite: {fileID: 21300000, guid: 9a514f63245070a4b9a536fcdb52c86f, type: 3}
   cry: {fileID: 8300000, guid: c5000d33003c6eb40ad043f7fe632f1e, type: 3}

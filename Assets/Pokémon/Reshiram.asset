@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Reshiram
   m_EditorClassIdentifier: 
+  id: 17
   pokemonName: Reshiram
   sprite: {fileID: 21300000, guid: 33a978b782a234642914e09b748e3bc0, type: 3}
   cry: {fileID: 8300000, guid: 69473390ef2ccd246b34459ec515ad23, type: 3}

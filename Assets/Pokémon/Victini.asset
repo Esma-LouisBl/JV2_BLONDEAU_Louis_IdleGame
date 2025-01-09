@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Victini
   m_EditorClassIdentifier: 
+  id: 25
   pokemonName: Victini
   sprite: {fileID: 21300000, guid: 807059ba0ca6ea74c85f6ff02a47396f, type: 3}
   cry: {fileID: 8300000, guid: d4c47f6797548f841924026a64d49d47, type: 3}

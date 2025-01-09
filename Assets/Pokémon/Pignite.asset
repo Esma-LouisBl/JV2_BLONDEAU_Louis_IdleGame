@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Pignite
   m_EditorClassIdentifier: 
+  id: 15
   pokemonName: Grotichon
   sprite: {fileID: 21300000, guid: 87a2a2c80718be84cb5f3e588f5e7854, type: 3}
   cry: {fileID: 8300000, guid: 1af549a2ad69b5f42963073f6a8c5fc0, type: 3}

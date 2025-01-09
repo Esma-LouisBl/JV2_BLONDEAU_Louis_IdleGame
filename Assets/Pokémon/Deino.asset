@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Deino
   m_EditorClassIdentifier: 
+  id: 7
   pokemonName: Solochi
   sprite: {fileID: 21300000, guid: 156a98dab9a70a64db49f829d13fae88, type: 3}
   cry: {fileID: 8300000, guid: f6f6c440072c8f4468b517507c7388d3, type: 3}

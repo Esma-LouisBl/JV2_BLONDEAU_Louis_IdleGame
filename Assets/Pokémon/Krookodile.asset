@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Krookodile
   m_EditorClassIdentifier: 
+  id: 12
   pokemonName: Crocorible
   sprite: {fileID: 21300000, guid: 31d1af55491111244a54348bb1ec2e37, type: 3}
   cry: {fileID: 8300000, guid: 9a33e8964a873b446a0f3c8c20996ae0, type: 3}

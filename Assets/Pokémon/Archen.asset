@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Archen
   m_EditorClassIdentifier: 
+  id: 1
   pokemonName: Arkeapti
   sprite: {fileID: 21300000, guid: c8bb9f656efb2fc45a7e61c7d7538d7b, type: 3}
   cry: {fileID: 8300000, guid: be75436f71f38174d9de0c1996fe160d, type: 3}

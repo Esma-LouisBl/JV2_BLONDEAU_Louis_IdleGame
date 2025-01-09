@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Minccino
   m_EditorClassIdentifier: 
+  id: 13
   pokemonName: Chinchidou
   sprite: {fileID: 21300000, guid: 519e2629e98980d4ca8c377ec8eeabf5, type: 3}
   cry: {fileID: 8300000, guid: 094a1dcc6efa0784499396df5597f039, type: 3}

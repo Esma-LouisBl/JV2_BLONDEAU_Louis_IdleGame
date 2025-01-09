@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Snivy
   m_EditorClassIdentifier: 
+  id: 22
   pokemonName: Vipelierre
   sprite: {fileID: 21300000, guid: 10f6501bfccdf0c468d2820f8241e97c, type: 3}
   cry: {fileID: 8300000, guid: 8fe8db7e38489db43a7823adb975634e, type: 3}

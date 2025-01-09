@@ -6,7 +6,6 @@ public class SaveLoad : MonoBehaviour
 {
     public GameManager manager;
     public Team team;
-    public Spawner spawner;
 
     // Start is called before the first frame update
     public void Save()
@@ -16,26 +15,26 @@ public class SaveLoad : MonoBehaviour
         PlayerPrefs.SetInt("ClickDamage", manager.clickDamage);
         PlayerPrefs.SetInt("Level", manager.level);
 
-        //if (team.members[0] != null)
-        //{
-        //    PlayerPrefs.SetString("Team0", team.members[0].pokemonName);
-        //    PlayerPrefs.SetInt("Atk0", team.atk0);
-        //    PlayerPrefs.SetFloat("Speed0", team.speed0);
-        //}
+        if (team.members[0] != null)
+        {
+            PlayerPrefs.SetString("Team0", team.members[0].pokemonName);
+            PlayerPrefs.SetInt("Atk0", team.atk0);
+            PlayerPrefs.SetFloat("Speed0", team.speed0);
+        }
 
-        //if (team.members[1] != null)
-        //{
-        //    PlayerPrefs.SetString("Team1", team.members[1].pokemonName);
-        //    PlayerPrefs.SetInt("Atk1", team.atk1);
-        //    PlayerPrefs.SetFloat("Speed1", team.speed1);
-        //}
+        if (team.members[1] != null)
+        {
+            PlayerPrefs.SetString("Team1", team.members[1].pokemonName);
+            PlayerPrefs.SetInt("Atk1", team.atk1);
+            PlayerPrefs.SetFloat("Speed1", team.speed1);
+        }
 
-        //if (team.members[2] != null)
-        //{
-        //    PlayerPrefs.SetString("Team2", team.members[2].pokemonName);
-        //    PlayerPrefs.SetInt("Atk2", team.atk2);
-        //    PlayerPrefs.SetFloat("Speed2", team.speed2);
-        //}
+        if (team.members[2] != null)
+        {
+            PlayerPrefs.SetString("Team2", team.members[2].pokemonName);
+            PlayerPrefs.SetInt("Atk2", team.atk2);
+            PlayerPrefs.SetFloat("Speed2", team.speed2);
+        }
 
     }
 
@@ -45,6 +44,8 @@ public class SaveLoad : MonoBehaviour
         manager.pokeballs = PlayerPrefs.GetInt("PokeBalls");
         manager.clickDamage = PlayerPrefs.GetInt("ClickDamage");
         manager.level = PlayerPrefs.GetInt("Level");
+
+
 
         //for (int i = 0; i < spawner.encounters.Length; i++)
         //{

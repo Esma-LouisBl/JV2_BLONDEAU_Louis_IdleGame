@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Zekrom
   m_EditorClassIdentifier: 
+  id: 26
   pokemonName: Zekrom
   sprite: {fileID: 21300000, guid: 77e8f91a4bc90614dbfe0c06706a2b99, type: 3}
   cry: {fileID: 8300000, guid: b2d2e25888739254294918a151d5ff18, type: 3}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Zweilous
   m_EditorClassIdentifier: 
+  id: 27
   pokemonName: Diamat
   sprite: {fileID: 21300000, guid: 296c4b57eb79f964faea9e14d2953223, type: 3}
   cry: {fileID: 8300000, guid: f57a54e237762f8498af17f5e7e207a9, type: 3}

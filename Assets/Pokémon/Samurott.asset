@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Samurott
   m_EditorClassIdentifier: 
+  id: 18
   pokemonName: Clamiral
   sprite: {fileID: 21300000, guid: fcaf4eb048e7c094dad3aadcdb317156, type: 3}
   cry: {fileID: 8300000, guid: 3ecf509e283802648bae2a67252f8e65, type: 3}

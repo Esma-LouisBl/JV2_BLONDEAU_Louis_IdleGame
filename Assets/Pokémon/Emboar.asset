@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Emboar
   m_EditorClassIdentifier: 
+  id: 9
   pokemonName: Roitiflam
   sprite: {fileID: 21300000, guid: 00f94b67863b6124c9cfefc7732c8fe0, type: 3}
   cry: {fileID: 8300000, guid: 1577999072da69146b498ba6f5522138, type: 3}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
   m_Name: Krokorok
   m_EditorClassIdentifier: 
+  id: 11
   pokemonName: Escroco
   sprite: {fileID: 21300000, guid: a418af3da1249eb49abc77cc94a08db6, type: 3}
   cry: {fileID: 8300000, guid: 73c3d176f9449f7499302151c28c3a45, type: 3}
