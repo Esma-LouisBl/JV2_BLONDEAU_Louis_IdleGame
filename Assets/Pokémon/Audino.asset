@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 28
   pokemonName: Nanmeouie
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: d9d88a5a34ed8eb46a593bc10c933d85, type: 3}
   cry: {fileID: 8300000, guid: 29b875d8fd9f77446908051380130c42, type: 3}
   type1: 6
   type2: 0
