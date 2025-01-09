@@ -7,7 +7,7 @@ public class ShopManager : MonoBehaviour
     public GameObject shop2Canvas;
 
     [SerializeField]
-    private TextMeshProUGUI _noMoney1, _noMoney2, _noMoney3, _noMoney4;
+    private TextMeshProUGUI _noMoney1;
 
     private void Start()
     {
@@ -30,8 +30,5 @@ public class ShopManager : MonoBehaviour
         shop2Canvas.SetActive(false);
         shop1Canvas.SetActive(true);
         _noMoney1.enabled = false;
-        _noMoney2.enabled = false;
-        _noMoney3.enabled = false;
-        _noMoney4.enabled = false;
     }
 }
