@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.UI;
 using TMPro;
 using UnityEngine.EventSystems;
-using UnityEditor.PackageManager;
 
 public class AmuletCoin : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
