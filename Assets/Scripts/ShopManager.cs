@@ -1,15 +1,19 @@
 using UnityEngine;
 using TMPro;
 
-public class MenuManager : MonoBehaviour
+public class ShopManager : MonoBehaviour
 {
-    public GameObject menuCanvas;
-
-    private bool menuActive = false;
+    public GameObject shop1Canvas;
+    public GameObject shop2Canvas;
 
     [SerializeField]
     private TextMeshProUGUI _noMoney1, _noMoney2, _noMoney3, _noMoney4;
 
+    private void Start()
+    {
+        shop1Canvas.SetActive(false);
+        shop2Canvas.SetActive(false);
+    }
     void Update()
     {
 
@@ -17,14 +21,14 @@ public class MenuManager : MonoBehaviour
 
     public void ToggleMenu()
     {
-        menuActive = !menuActive;
-        menuCanvas.SetActive(menuActive);
+        shop2Canvas.SetActive(true);
+        shop1Canvas.SetActive(false);
     }
 
     public void CloseMenu()
     {
-        menuActive = false;
-        menuCanvas.SetActive(false);
+        shop2Canvas.SetActive(false);
+        shop1Canvas.SetActive(true);
         _noMoney1.enabled = false;
         _noMoney2.enabled = false;
         _noMoney3.enabled = false;
