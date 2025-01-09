@@ -33,6 +33,8 @@ public class Spawner : MonoBehaviour
     public PokemonSE[] encounters;
     private int _wildRarity;
 
+    public AmuletCoin amuletCoin;
+
     public bool catched =false;
 
     void Start()
@@ -86,7 +88,7 @@ public class Spawner : MonoBehaviour
         if (currentHp <= 0)
 
         {
-            manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
+            manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)) * (amuletCoin.power-0.1f));
             manager.level++;
             _wildRarity = Random.Range(1, 101);
             if (_wildRarity == 1)
@@ -161,7 +163,7 @@ public class Spawner : MonoBehaviour
         if (currentHp <= 0)
 
         {
-            manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)));
+            manager.pokedollars += Mathf.RoundToInt(currentPokemon.moneyDrop * (1 + 0.1f * Mathf.Log(manager.level + 1)) * (amuletCoin.power-0.1f));
             manager.level++;
             _wildRarity = Random.Range(1, 101);
             if (_wildRarity == 1)

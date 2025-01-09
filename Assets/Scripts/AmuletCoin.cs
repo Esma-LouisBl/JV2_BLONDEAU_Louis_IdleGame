@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEditor.PackageManager;
 
-public class IncreaseClickDamage : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class AmuletCoin : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     public GameManager manager;
@@ -14,24 +14,28 @@ public class IncreaseClickDamage : MonoBehaviour, IPointerEnterHandler, IPointer
     public TextMeshProUGUI priceText;
 
     [SerializeField]
-    public int price, power;
+    public int price;
+
+    [SerializeField]
+    public float power;
+
     [SerializeField]
     private TextMeshProUGUI _infos, _noMoney;
     // Start is called before the first frame update
     void Start()
     {
-        price = 15;
-        power = 1;
+        price = 2000;
+        power = 1.1f;
         _infos.enabled = false;
         _noMoney.enabled = false;
-        _infos.text = "Achetez un Bracelet Macho pour augmenter de " + power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
+        _infos.text = "Achetez une Piece Rune pour multiplier vos gains d'argent par " + power + " (multiplicateur actuel : " + (power-0.1f) + ")";
     }
 
     // Update is called once per frame
     void Update()
     {
         priceText.text = price.ToString() + " $";
-        _infos.text = "Achetez un Bracelet Macho pour augmenter de " + power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
+        _infos.text = "Achetez une Piece Rune pour multiplier vos gains d'argent par " + power + " (multiplicateur actuel : " + (power - 0.1f) + ")";
     }
 
     public void Purchase()
@@ -39,10 +43,9 @@ public class IncreaseClickDamage : MonoBehaviour, IPointerEnterHandler, IPointer
         if (manager.pokedollars >= price)
         {
             manager.pokedollars -= price;
-            manager.clickDamage += power;
-            power++;
-            price *= 2;
-            _infos.text = "Achetez un Bracelet Macho pour augmenter de " + power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
+            power += 0.1f;
+            price = Mathf.RoundToInt(price * 1.5f);
+            _infos.text = "Achetez une Piece Rune pour multiplier vos gains d'argent par " + power + " (multiplicateur actuel : " + (power - 0.1f) + ")";
         }
         else 
         {
