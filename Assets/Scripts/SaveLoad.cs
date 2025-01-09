@@ -10,6 +10,7 @@ public class SaveLoad : MonoBehaviour
     public ChoiceBand band;
     public ChoiceScarf scarf;
     public IncreaseClickDamage macho;
+    public AmuletCoin amuletCoin;
 
     // Start is called before the first frame update
     public void Save()
@@ -24,6 +25,8 @@ public class SaveLoad : MonoBehaviour
         PlayerPrefs.SetFloat("PowerScarf", scarf.power);
         PlayerPrefs.SetInt("PowerMacho", macho.power);
         PlayerPrefs.SetInt("PriceMacho", macho.price);
+        PlayerPrefs.SetFloat("PowerCoin", amuletCoin.power);
+        PlayerPrefs.SetInt("PriceCoin", amuletCoin.price);
 
         if (team.members[0] != null)
         {
@@ -72,6 +75,8 @@ public class SaveLoad : MonoBehaviour
         scarf.price = PlayerPrefs.GetInt("PriceScarf");
         macho.power = PlayerPrefs.GetInt("PowerMacho");
         macho.price = PlayerPrefs.GetInt("PriceMacho");
+        amuletCoin.power = PlayerPrefs.GetFloat("PowerCoin");
+        amuletCoin.price = PlayerPrefs.GetInt("PriceCoin");
 
 
 

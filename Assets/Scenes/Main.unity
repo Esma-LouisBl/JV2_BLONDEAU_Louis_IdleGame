@@ -4309,6 +4309,7 @@ MonoBehaviour:
   band: {fileID: 1489602254}
   scarf: {fileID: 1366127237}
   macho: {fileID: 1112338459}
+  amuletCoin: {fileID: 1090310427}
 --- !u!1 &726010237
 GameObject:
   m_ObjectHideFlags: 0
