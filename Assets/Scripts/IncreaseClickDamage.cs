@@ -14,34 +14,35 @@ public class IncreaseClickDamage : MonoBehaviour, IPointerEnterHandler, IPointer
     public TextMeshProUGUI priceText;
 
     [SerializeField]
-    private int _price, _power;
+    public int price, power;
     [SerializeField]
     private TextMeshProUGUI _infos, _noMoney;
     // Start is called before the first frame update
     void Start()
     {
-        _price = 15;
-        _power = 1;
+        price = 15;
+        power = 1;
         _infos.enabled = false;
         _noMoney.enabled = false;
-        _infos.text = "Achetez un Bracelet Macho pour augmenter de " + _power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
+        _infos.text = "Achetez un Bracelet Macho pour augmenter de " + power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
     }
 
     // Update is called once per frame
     void Update()
     {
-        priceText.text = _price.ToString() + " $";
+        priceText.text = price.ToString() + " $";
+        _infos.text = "Achetez un Bandeau Choix pour augmenter de " + power + " les dégâts de tous vos Pokémon.";
     }
 
     public void Purchase()
     {
-        if (manager.pokedollars >= _price)
+        if (manager.pokedollars >= price)
         {
-            manager.pokedollars -= _price;
-            manager.clickDamage += _power;
-            _power++;
-            _price *= 2;
-            _infos.text = "Achetez un Bracelet Macho pour augmenter de " + _power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
+            manager.pokedollars -= price;
+            manager.clickDamage += power;
+            power++;
+            price *= 2;
+            _infos.text = "Achetez un Bracelet Macho pour augmenter de " + power + " la puissance de votre clic (puissance actuelle : " + manager.clickDamage + ")";
         }
         else 
         {

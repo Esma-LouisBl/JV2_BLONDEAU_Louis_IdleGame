@@ -15,66 +15,67 @@ public class ChoiceScarf : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public TextMeshProUGUI priceText;
 
     [SerializeField]
-    private int _price;
+    public int price;
 
     [SerializeField]
-    private float _power;
+    public float power;
     [SerializeField]
     private TextMeshProUGUI _infos, _noMoney;
     // Start is called before the first frame update
     void Start()
     {
-        _price = 250;
-        _power = 0.1f;
+        price = 250;
+        power = 0.1f;
         _infos.enabled = false;
         _noMoney.enabled = false;
-        _infos.text = "Achetez un Mouchoir Choix pour diminuer de " + _power + " le cooldown de tous vos Pokémon.";
+        _infos.text = "Achetez un Mouchoir Choix pour diminuer de " + power + " le cooldown de tous vos Pokémon.";
     }
 
     // Update is called once per frame
     void Update()
     {
-        priceText.text = _price.ToString() + " $";
+        priceText.text = price.ToString() + " $";
+        _infos.text = "Achetez un Mouchoir Choix pour diminuer de " + power + " le cooldown de tous vos Pokémon.";
     }
 
     public void Purchase()
     {
-        if (manager.pokedollars >= _price)
+        if (manager.pokedollars >= price)
         {
-            manager.pokedollars -= _price;
-            _power = Mathf.Round(_power * 10.0f) * 0.1f;
-            if (team.speed0 - _power > 0)
+            manager.pokedollars -= price;
+            power = Mathf.Round(power * 10.0f) * 0.1f;
+            if (team.speed0 - power > 0)
             { 
-                team.speed0 -= _power;
+                team.speed0 -= power;
                 team.speed0 = Mathf.Round(team.speed0 * 10.0f) * 0.1f;
             }
             else
             {
                 team.speed0 = 0.1f;
             }
-            if (team.speed1 - _power > 0)
+            if (team.speed1 - power > 0)
             {
-                team.speed1 -= _power;
+                team.speed1 -= power;
                 team.speed1 = Mathf.Round(team.speed1 * 10.0f) * 0.1f;
             }
             else
             {
                 team.speed1 = 0.1f;
             }
-            if (team.speed2 - _power > 0)
+            if (team.speed2 - power > 0)
             {
-                team.speed2 -= _power;
+                team.speed2 -= power;
                 team.speed2 = Mathf.Round(team.speed2 * 10.0f) * 0.1f;
             }
             else
             {
                 team.speed2 = 0.1f;
             }
-            _price *= 2;
-            _infos.text = "Achetez un Mouchoir Choix pour diminuer de " + _power + " le cooldown de tous vos Pokémon.";
+            price *= 2;
+            _infos.text = "Achetez un Mouchoir Choix pour diminuer de " + power + " le cooldown de tous vos Pokémon.";
 
-            _power += 0.1f;
-            _power = Mathf.Round(_power * 10.0f) * 0.1f;
+            power += 0.1f;
+            power = Mathf.Round(power * 10.0f) * 0.1f;
         }
         else 
         {

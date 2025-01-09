@@ -7,6 +7,9 @@ public class SaveLoad : MonoBehaviour
     public GameManager manager;
     public Team team;
     public Spawner spawner;
+    public ChoiceBand band;
+    public ChoiceScarf scarf;
+    public IncreaseClickDamage macho;
 
     // Start is called before the first frame update
     public void Save()
@@ -15,6 +18,12 @@ public class SaveLoad : MonoBehaviour
         PlayerPrefs.SetInt("PokeBalls", manager.pokeballs);
         PlayerPrefs.SetInt("ClickDamage", manager.clickDamage);
         PlayerPrefs.SetInt("Level", manager.level);
+        PlayerPrefs.SetInt("PriceBand", band.price);
+        PlayerPrefs.SetInt("PowerBand", band.power);
+        PlayerPrefs.SetInt("PriceScarf", scarf.price);
+        PlayerPrefs.SetFloat("PowerScarf", scarf.power);
+        PlayerPrefs.SetInt("PowerMacho", macho.power);
+        PlayerPrefs.SetInt("PriceMacho", macho.price);
 
         if (team.members[0] != null)
         {
@@ -57,6 +66,12 @@ public class SaveLoad : MonoBehaviour
         manager.pokeballs = PlayerPrefs.GetInt("PokeBalls");
         manager.clickDamage = PlayerPrefs.GetInt("ClickDamage");
         manager.level = PlayerPrefs.GetInt("Level");
+        band.power = PlayerPrefs.GetInt("PowerBand");
+        band.price = PlayerPrefs.GetInt("PriceBand");
+        scarf.power = PlayerPrefs.GetFloat("PowerScarf");
+        scarf.price = PlayerPrefs.GetInt("PriceScarf");
+        macho.power = PlayerPrefs.GetInt("PowerMacho");
+        macho.price = PlayerPrefs.GetInt("PriceMacho");
 
 
 

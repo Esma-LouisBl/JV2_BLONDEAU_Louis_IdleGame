@@ -15,36 +15,37 @@ public class ChoiceBand : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public TextMeshProUGUI priceText;
 
     [SerializeField]
-    private int _price, _power;
+    public int price, power;
     [SerializeField]
     private TextMeshProUGUI _infos, _noMoney;
     // Start is called before the first frame update
     void Start()
     {
-        _price = 250;
-        _power = 3;
+        price = 250;
+        power = 3;
         _infos.enabled = false;
         _noMoney.enabled = false;
-        _infos.text = "Achetez un Bandeau Choix pour augmenter de " + _power + " les dégâts de tous vos Pokémon.";
+        _infos.text = "Achetez un Bandeau Choix pour augmenter de " + power + " les dégâts de tous vos Pokémon.";
     }
 
     // Update is called once per frame
     void Update()
     {
-        priceText.text = _price.ToString() + " $";
+        priceText.text = price.ToString() + " $";
+        _infos.text = "Achetez un Bandeau Choix pour augmenter de " + power + " les dégâts de tous vos Pokémon.";
     }
 
     public void Purchase()
     {
-        if (manager.pokedollars >= _price)
+        if (manager.pokedollars >= price)
         {
-            manager.pokedollars -= _price;
-            team.atk0 += _power;
-            team.atk1 += _power;
-            team.atk2 += _power;
-            _power *= 2;
-            _price *= 2;
-            _infos.text = "Achetez un Bandeau Choix pour augmenter de " + _power + " les dégâts de tous vos Pokémon.";
+            manager.pokedollars -= price;
+            team.atk0 += power;
+            team.atk1 += power;
+            team.atk2 += power;
+            power *= 2;
+            price *= 2;
+            _infos.text = "Achetez un Bandeau Choix pour augmenter de " + power + " les dégâts de tous vos Pokémon.";
         }
         else 
         {

@@ -2742,6 +2742,9 @@ MonoBehaviour:
   manager: {fileID: 1798389572}
   team: {fileID: 1996147489}
   spawner: {fileID: 1217137360}
+  band: {fileID: 1489602254}
+  scarf: {fileID: 1366127237}
+  macho: {fileID: 1112338459}
 --- !u!1 &801670611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4323,8 +4326,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 1798389572}
   priceText: {fileID: 110892626}
-  _price: 0
-  _power: 0
+  price: 0
+  power: 0
   _infos: {fileID: 1587162228}
   _noMoney: {fileID: 122025149}
 --- !u!114 &1112338460
@@ -5746,8 +5749,8 @@ MonoBehaviour:
   manager: {fileID: 1798389572}
   team: {fileID: 1996147489}
   priceText: {fileID: 1024537132}
-  _price: 0
-  _power: 0
+  price: 0
+  power: 0
   _infos: {fileID: 1633506848}
   _noMoney: {fileID: 918603792}
 --- !u!114 &1366127238
@@ -6487,8 +6490,8 @@ MonoBehaviour:
   manager: {fileID: 1798389572}
   team: {fileID: 1996147489}
   priceText: {fileID: 1760748288}
-  _price: 0
-  _power: 0
+  price: 0
+  power: 0
   _infos: {fileID: 463899171}
   _noMoney: {fileID: 1286730684}
 --- !u!114 &1489602255
