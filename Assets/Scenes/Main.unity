@@ -7007,6 +7007,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cb76897cca056364c88f2d463ed78bcd, type: 2}
   - {fileID: 11400000, guid: 1eeaffd4976f0484290ab6ea9243a4cf, type: 2}
   - {fileID: 11400000, guid: 332e577dc5ce6cc419470dc22e7f758c, type: 2}
+  - {fileID: 11400000, guid: 86e33774960f32c44be150b10df3937e, type: 2}
   amuletCoin: {fileID: 1090310427}
   catched: 0
 --- !u!4 &1217137361

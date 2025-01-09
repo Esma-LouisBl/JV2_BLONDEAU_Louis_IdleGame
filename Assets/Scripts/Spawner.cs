@@ -233,7 +233,7 @@ public class Spawner : MonoBehaviour
 
         currentPokemon = newPokemon;
 
-        maxHp = Mathf.RoundToInt(currentPokemon.totalHp * (1 + 0.4f * Mathf.Log(manager.level +1 )));
+        maxHp = Mathf.RoundToInt(currentPokemon.totalHp + (manager.level * (Random.Range(10, 20))/10));
 
         currentHp = maxHp;
 
