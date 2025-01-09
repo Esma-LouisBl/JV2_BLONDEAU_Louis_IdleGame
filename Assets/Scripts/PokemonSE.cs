@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PokemonSE : ScriptableObject
 {
+    public int id;
     public string pokemonName;
     public Sprite sprite;
     public AudioClip cry;
