@@ -2741,6 +2741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 1798389572}
   team: {fileID: 1996147489}
+  spawner: {fileID: 1217137360}
 --- !u!1 &801670611
 GameObject:
   m_ObjectHideFlags: 0
