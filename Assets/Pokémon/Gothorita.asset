@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
-  m_Name: Sandile
+  m_Name: Gothorita
   m_EditorClassIdentifier: 
-  id: 19
-  pokemonName: Mascaiman
-  sprite: {fileID: 21300000, guid: f7e3f5470c7c42b4f9bf348ab99c1f1c, type: 3}
-  cry: {fileID: 8300000, guid: e91286a4ae499464eaff70edc145cb51, type: 3}
-  type1: 15
-  type2: 11
-  totalHp: 110
-  atq: 5
-  cooldown: 5
-  catchRate: 55
-  moneyDrop: 10
-  rarity: 1
+  id: 31
+  pokemonName: Mesmerella
+  sprite: {fileID: 21300000, guid: 67db9717c86e0ed41bdc75779bb16481, type: 3}
+  cry: {fileID: 8300000, guid: d51a103eb049ba84098ad7c1b5368597, type: 3}
+  type1: 12
+  type2: 0
+  totalHp: 180
+  atq: 3
+  cooldown: 2.8
+  catchRate: 45
+  moneyDrop: 17
+  rarity: 2

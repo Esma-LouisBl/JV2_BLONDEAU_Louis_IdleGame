@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
-  m_Name: Sandile
+  m_Name: Kyurem
   m_EditorClassIdentifier: 
-  id: 19
-  pokemonName: Mascaiman
-  sprite: {fileID: 21300000, guid: f7e3f5470c7c42b4f9bf348ab99c1f1c, type: 3}
-  cry: {fileID: 8300000, guid: e91286a4ae499464eaff70edc145cb51, type: 3}
-  type1: 15
-  type2: 11
-  totalHp: 110
-  atq: 5
-  cooldown: 5
-  catchRate: 55
-  moneyDrop: 10
-  rarity: 1
+  id: 29
+  pokemonName: Kyurem
+  sprite: {fileID: 21300000, guid: 55adb063c21674441ac8569457ee7a20, type: 3}
+  cry: {fileID: 8300000, guid: 0849a065c4bdbd5459cc940f3661d570, type: 3}
+  type1: 8
+  type2: 13
+  totalHp: 600
+  atq: 75
+  cooldown: 3
+  catchRate: 5
+  moneyDrop: 35
+  rarity: 4

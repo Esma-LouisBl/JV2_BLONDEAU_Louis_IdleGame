@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
-  m_Name: Sandile
+  m_Name: Gothitelle
   m_EditorClassIdentifier: 
-  id: 19
-  pokemonName: Mascaiman
-  sprite: {fileID: 21300000, guid: f7e3f5470c7c42b4f9bf348ab99c1f1c, type: 3}
-  cry: {fileID: 8300000, guid: e91286a4ae499464eaff70edc145cb51, type: 3}
-  type1: 15
-  type2: 11
-  totalHp: 110
-  atq: 5
-  cooldown: 5
-  catchRate: 55
-  moneyDrop: 10
-  rarity: 1
+  id: 32
+  pokemonName: Siderella
+  sprite: {fileID: 21300000, guid: c6e068d93d9b6174f959f6e0d8ea9f44, type: 3}
+  cry: {fileID: 8300000, guid: 794155306b39d804d87e359b9e0c4ebd, type: 3}
+  type1: 12
+  type2: 0
+  totalHp: 475
+  atq: 16
+  cooldown: 2.5
+  catchRate: 15
+  moneyDrop: 23
+  rarity: 3

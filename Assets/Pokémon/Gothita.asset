@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
-  m_Name: Sandile
+  m_Name: Gothita
   m_EditorClassIdentifier: 
-  id: 19
-  pokemonName: Mascaiman
-  sprite: {fileID: 21300000, guid: f7e3f5470c7c42b4f9bf348ab99c1f1c, type: 3}
-  cry: {fileID: 8300000, guid: e91286a4ae499464eaff70edc145cb51, type: 3}
-  type1: 15
-  type2: 11
-  totalHp: 110
-  atq: 5
-  cooldown: 5
-  catchRate: 55
-  moneyDrop: 10
+  id: 30
+  pokemonName: Scrutella
+  sprite: {fileID: 21300000, guid: 1ebf2c3d9e9b3b5478666d91fb263942, type: 3}
+  cry: {fileID: 8300000, guid: 7009ee22f25187644ab8ba3ea88aad41, type: 3}
+  type1: 12
+  type2: 0
+  totalHp: 105
+  atq: 1
+  cooldown: 4
+  catchRate: 80
+  moneyDrop: 12
   rarity: 1
