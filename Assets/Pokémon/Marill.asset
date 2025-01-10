@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
+  m_Name: Marill
+  m_EditorClassIdentifier: 
+  id: 45
+  pokemonName: Marill
+  sprite: {fileID: 21300000, guid: 041940619ff7e8f48bb3b7a9d49714ba, type: 3}
+  cry: {fileID: 8300000, guid: fa046fa80a01b65429047513cd72a7c3, type: 3}
+  type1: 2
+  type2: 0
+  totalHp: 85
+  atq: 2
+  cooldown: 1.7
+  catchRate: 85
+  moneyDrop: 6
+  rarity: 1

@@ -5259,6 +5259,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1eeaffd4976f0484290ab6ea9243a4cf, type: 2}
   - {fileID: 11400000, guid: 332e577dc5ce6cc419470dc22e7f758c, type: 2}
   - {fileID: 11400000, guid: 86e33774960f32c44be150b10df3937e, type: 2}
+  - {fileID: 11400000, guid: a83ea2f39f4e0f34d92ca0d5dbc1265f, type: 2}
+  - {fileID: 11400000, guid: a492c61a4225bda4ea7b8891fd5c2360, type: 2}
+  - {fileID: 11400000, guid: 557c2195165eaef4c973d489572fa47b, type: 2}
+  - {fileID: 11400000, guid: 0b870e16596ab4948833663e2503cac5, type: 2}
+  - {fileID: 11400000, guid: d0947cae131caf640a2b1e682a4b8102, type: 2}
+  - {fileID: 11400000, guid: c22a99a5eda2a2541a1b409b9bc261d8, type: 2}
+  - {fileID: 11400000, guid: cd1ce304d3ba47e42a06c84d317410ae, type: 2}
+  - {fileID: 11400000, guid: 0cdd654358f26a44aa2c7ac4a4ad3c88, type: 2}
+  - {fileID: 11400000, guid: f224df1aeafe9b240b92f26aaf07fa34, type: 2}
+  - {fileID: 11400000, guid: 9f8e567945dab0c409fb82a1f608a384, type: 2}
+  - {fileID: 11400000, guid: 8de575e56510c244bbd3383a3fa4c3ba, type: 2}
+  - {fileID: 11400000, guid: b87909f7b9693ee468c057a940e06125, type: 2}
+  - {fileID: 11400000, guid: 1b49bca916a889d41923394c8acc4950, type: 2}
+  - {fileID: 11400000, guid: 18014cdeb010e824484d86562f130b87, type: 2}
+  - {fileID: 11400000, guid: 9f9c6501d20a2a04586ae920c91219bf, type: 2}
+  - {fileID: 11400000, guid: 89a1dc5e6447f1f418041eb50ef67111, type: 2}
+  - {fileID: 11400000, guid: 0e19a540d3bee224b9bf9dafc9c6c968, type: 2}
+  - {fileID: 11400000, guid: c7106f3e2d02c4a419566344809acd0a, type: 2}
   amuletCoin: {fileID: 1090310427}
   catched: 0
 --- !u!4 &1217137361
