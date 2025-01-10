@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcb43d5cdb3750449b4f1c0f7f2791d2, type: 3}
-  m_Name: Rayquaza
+  m_Name: Mew
   m_EditorClassIdentifier: 
-  id: 33
-  pokemonName: Rayquaza
-  sprite: {fileID: 21300000, guid: 8733013d27be66c499ef0b53e981af25, type: 3}
-  cry: {fileID: 8300000, guid: 810d5b122c4662749a5563920cb8a8d9, type: 3}
-  type1: 8
-  type2: 9
-  totalHp: 780
-  atq: 80
+  id: 37
+  pokemonName: Mew
+  sprite: {fileID: 21300000, guid: 8b030604991791f4d81256a78edbdf05, type: 3}
+  cry: {fileID: 8300000, guid: 08f3fcaffe0b89c4c99a1266b1c54395, type: 3}
+  type1: 12
+  type2: 0
+  totalHp: 500
+  atq: 10
   cooldown: 2.5
   catchRate: 5
-  moneyDrop: 50
+  moneyDrop: 150
   rarity: 4
